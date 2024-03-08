@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.5",
     "@astrojs/mdx": "^2.1.1",
     "@fontsource/courier-prime": "^5.0.18",
+    "@fontsource/lora": "^5.0.13",
     "astro": "^4.4.2",
     "typescript": "^5.3.3"
   }

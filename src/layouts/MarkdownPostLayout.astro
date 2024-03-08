@@ -1,0 +1,55 @@
+---
+import Layout from './Layout.astro';
+import '@fontsource/lora';
+const { frontmatter } = Astro.props;
+const editDatePresent = frontmatter.editDate.toString().length > 1;
+---
+
+<Layout title='My Blog'>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    <span>{frontmatter.pubDate.toString().slice(0, 10)}</span>
+    {
+      editDatePresent && (
+        <span>
+          <em>Edited: {frontmatter.editDate.toString().slice(0, 10)}</em>
+        </span>
+      )
+    }
+    <section>
+      <slot />
+    </section>
+  </article>
+</Layout>
+
+<style>
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  span em {
+    font-size: 0.8rem;
+  }
+
+  html {
+    background-color: rgb(237, 233, 233);
+  }
+
+  article {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 65ch;
+  }
+
+  section {
+    font-family: 'Lora', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>
