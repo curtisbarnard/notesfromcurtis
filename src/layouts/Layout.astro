@@ -1,28 +1,54 @@
 ---
+import '@fontsource/lora';
+import Header from '../components/Header.astro';
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background: #ffffff;
-	}
+  html {
+    font-family: 'Lora', system-ui, serif;
+    font-size: 1rem;
+    background: hsl(31, 90%, 98%);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90ch;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* For styling headers inside of markdown blog post */
+  article section h2 {
+    /* color: red; */
+  }
 </style>
