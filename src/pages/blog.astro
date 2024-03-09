@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+const allPosts = await Astro.glob('../pages/posts/*.mdx');
+const title = 'Archive';
+---
+
+<Layout title={title}>
+  <main>
+    <p>
+      Below you'll find all my posts in reverse chronological order. Simply click on the post to be
+      taken to the full article.
+    </p>
+    <ul>
+      {
+        allPosts.map((post) => (
+          <li>
+            <a href={post.url}>
+              <h2>{post.frontmatter.title}</h2>
+              <span class='pubDate'>{post.frontmatter.pubDate.toString().slice(0, 10)}</span>
+              <p>{post.frontmatter.description}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 65ch;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 2rem 0;
+  }
+
+  h2 {
+    display: inline;
+    margin: 0 0 0.2rem 0;
+  }
+
+  li p {
+    margin: 0;
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  a:visited {
+    color: hsl(0, 0%, 0%);
+  }
+
+  a:hover {
+    color: rgb(255, 161, 61);
+  }
+
+  .pubDate {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+</style>
