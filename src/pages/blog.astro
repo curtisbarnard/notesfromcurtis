@@ -1,6 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const allPosts = await Astro.glob('../pages/posts/*.mdx');
+const sortedPosts = allPosts.sort((a, b) => {
+  const aDate = new Date(a.frontmatter.pubDate).valueOf();
+  const bDate = new Date(b.frontmatter.pubDate).valueOf();
+  return bDate - aDate;
+});
 const title = 'Archive';
 ---
 
@@ -12,7 +17,7 @@ const title = 'Archive';
     </p>
     <ul>
       {
-        allPosts.map((post) => (
+        sortedPosts.map((post) => (
           <li>
             <a href={post.url}>
               <h2>{post.frontmatter.title}</h2>
