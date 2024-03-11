@@ -1,0 +1,20 @@
+---
+interface Props {
+  letter: string;
+}
+
+const { letter } = Astro.props;
+---
+
+<span>
+  {letter}
+</span>
+
+<style>
+  span {
+    font-size: 4rem;
+    float: left;
+    margin-right: 0.5rem;
+    line-height: 1;
+  }
+</style>
