@@ -1,6 +1,4 @@
 ---
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
 import '@fontsource/courier-prime';
 
 interface Props {
@@ -16,15 +14,17 @@ const { imgPath, altText, borderText } = Astro.props;
   <div class='top'></div>
   <div class='left'></div>
   <img
-    src={'/src/images/' + imgPath + '-600w.webp'}
+    src={'/notesfromcurtis/images/' + imgPath + '-600w.webp'}
     alt={altText}
-    srcset={'/src/images/' +
+    srcset={'/notesfromcurtis/images/' +
       imgPath +
       '-600w.webp 600w, ' +
-      '/src/images/' +
+      '/notesfromcurtis/images/' +
       imgPath +
       '-300w.webp 300w'}
     sizes='(max-width: 600px) 300px, 600px'
+    decoding='async'
+    loading='lazy'
   />
   <div class='right'></div>
   <div class='bottom'><span>{borderText}</span></div>
