@@ -4,22 +4,28 @@ import { Image } from 'astro:assets';
 import '@fontsource/courier-prime';
 
 interface Props {
-  imagePath: string;
+  imgPath: string;
   altText: string;
   borderText: string;
 }
 
-const { imagePath, altText, borderText } = Astro.props;
-// The below is for dynamically bring in a local image
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/*.{jpeg,jpg,png,gif}');
-if (!images[imagePath])
-  throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+const { imgPath, altText, borderText } = Astro.props;
 ---
 
 <div class='imageContainer'>
   <div class='top'></div>
   <div class='left'></div>
-  <Image src={images[imagePath]()} alt={altText} />
+  <img
+    src={'/src/images/' + imgPath + '-600w.webp'}
+    alt={altText}
+    srcset={'/src/images/' +
+      imgPath +
+      '-600w.webp 600w, ' +
+      '/src/images/' +
+      imgPath +
+      '-300w.webp 300w'}
+    sizes='(max-width: 600px) 300px, 600px'
+  />
   <div class='right'></div>
   <div class='bottom'><span>{borderText}</span></div>
 </div>
@@ -29,6 +35,8 @@ if (!images[imagePath])
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-rows: 15px auto 15px;
+    justify-content: center;
+    margin: 1rem 0;
   }
 
   .top,
@@ -63,10 +71,26 @@ if (!images[imagePath])
       rgb(255, 161, 61) 75%,
       rgb(255, 238, 202)
     );
-    /* background-size: 50%; */
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    .imageContainer {
+      grid-template-columns: 10px auto 10px;
+      grid-template-rows: 10px auto 10px;
+    }
+
+    .top,
+    .bottom,
+    .left,
+    .right {
+      font-size: 0.5rem;
+      letter-spacing: 0.05rem;
+    }
+
+    .bottom {
+      padding-right: 10px;
+    }
   }
 </style>
