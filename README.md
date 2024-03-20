@@ -17,4 +17,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |s
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## Image Prep
+
+Images are initially culled/tagged with [digiKam](https://www.digikam.org/), processed with [darktable](https://www.darktable.org/), and then exported at 300 and 600 pixels wide in the webp format to help with responsiveness and load times. Finally all metadata is stripped from the images and a copyright is added via [exiftool](https://exiftool.org/) with `exiftool * -all= -overwrite_original -copyright="<YYYY> Curtis Barnard"`
