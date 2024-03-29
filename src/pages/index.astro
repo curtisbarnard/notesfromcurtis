@@ -1,7 +1,70 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ImageFrame from '../components/ImageFrame.astro';
+const allPosts = await Astro.glob('../pages/posts/*.mdx');
+const sortedPosts = allPosts.sort((a, b) => {
+  const aDate = new Date(a.frontmatter.pubDate).valueOf();
+  const bDate = new Date(b.frontmatter.pubDate).valueOf();
+  return bDate - aDate;
+});
+const latestPost = sortedPosts[0];
+const title = 'Notes From Curtis';
 ---
 
-<Layout title='Notes From Curtis' />
+<Layout title={title} />
+<main>
+  <a href={latestPost.url}>
+    <h2>{latestPost.frontmatter.title}</h2>
+    <ImageFrame
+      imgPath={latestPost.frontmatter.mainImage}
+      altText='A women wearing a backpack standing on a trail looking towards a snowcapped mountain'
+      borderText='MT. JEFFERSON, OREGON 2010-07-20'
+    />
+    <p>{latestPost.frontmatter.description}</p>
+  </a>
+</main>
 
-<style></style>
+<style>
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 65ch;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 2rem 0;
+  }
+
+  h2 {
+    display: inline;
+    margin: 0 0 0.2rem 0;
+  }
+
+  li p {
+    margin: 0;
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  a:visited {
+    color: hsl(0, 0%, 0%);
+  }
+
+  a:hover {
+    color: rgb(255, 161, 61);
+  }
+
+  .pubDate {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+</style>
