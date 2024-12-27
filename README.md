@@ -21,4 +21,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## Image Prep
 
-Images are initially culled/tagged with [digiKam](https://www.digikam.org/), processed with [darktable](https://www.darktable.org/), and then exported at 300 and 600 pixels wide in the webp format to help with responsiveness and load times. Finally all metadata is stripped from the images and a copyright is added via [exiftool](https://exiftool.org/) with `exiftool * -all= -overwrite_original -copyright="<YYYY> Curtis Barnard"`
+Images are initially culled/tagged with [digiKam](https://www.digikam.org/), processed with [darktable](https://www.darktable.org/), and then exported at 300 and 600 pixels wide in the webp format to help with responsiveness and load times. Finally all metadata is stripped from the images and a copyright is added via [exiftool](https://exiftool.org/) with `exiftool * -all= -tagsfromfile @ -icc_profile -overwrite_original -copyright="<YYYY> Curtis Barnard"`
