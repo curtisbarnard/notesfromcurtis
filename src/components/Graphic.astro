@@ -1,0 +1,27 @@
+---
+interface Props {
+  imgPath: string;
+  altText: string;
+}
+
+const { imgPath, altText } = Astro.props;
+---
+
+<div class='imageContainer'>
+  <img
+    src={'/images/' + imgPath + '-600w.webp'}
+    alt={altText}
+    srcset={'/images/' + imgPath + '-600w.webp 600w, ' + '/images/' + imgPath + '-300w.webp 300w'}
+    sizes='(max-width: 600px) 300px, 600px'
+    decoding='async'
+    loading='lazy'
+  />
+</div>
+
+<style>
+  .imageContainer {
+    display: grid;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+</style>
