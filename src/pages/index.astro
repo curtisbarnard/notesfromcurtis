@@ -15,11 +15,7 @@ const title = 'Notes From Curtis';
 <main>
   <a href={latestPost.url}>
     <h2>{latestPost.frontmatter.title}</h2>
-    <ImageFrame
-      imgPath={latestPost.frontmatter.mainImage}
-      altText='A women wearing a backpack standing on a trail looking towards a snowcapped mountain'
-      borderText='MT. JEFFERSON, OREGON 2010-07-20'
-    />
+    <ImageFrame imgPath={latestPost.frontmatter.mainImage} altText='' borderText='' />
     <p>{latestPost.frontmatter.description}</p>
   </a>
 </main>
