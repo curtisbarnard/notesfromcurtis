@@ -1,0 +1,53 @@
+---
+interface Props {
+  miles: number;
+  activities: number;
+  longest: number;
+}
+
+const { miles, activities, longest } = Astro.props;
+---
+
+<div class='container'>
+  <div><span>{activities}</span>rides</div>
+  <div class='line'></div>
+  <div><span>{miles}</span>miles</div>
+  <div class='line'></div>
+  <div><span>{longest}</span>longest</div>
+</div>
+
+<style>
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr 1fr 5fr;
+    justify-items: center;
+    background-color: hsl(0, 0%, 93.7%);
+    color: hsl(353.9, 95.6%, 55.5%);
+  }
+
+  .container > div {
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .container > div > span {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .line {
+    width: 1px;
+    border-left: 1px solid hsl(160, 3.4%, 82.9%);
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      width: 300px;
+    }
+    .container > div > span {
+      font-size: 1.4rem;
+    }
+  }
+</style>

@@ -8,18 +8,14 @@ const sortedPosts = allPosts.sort((a, b) => {
   return bDate - aDate;
 });
 const latestPost = sortedPosts[0];
-const title = 'Notes From Curtis';
+const title = 'Notes from Curtis...';
 ---
 
 <Layout title={title} />
 <main>
   <a href={latestPost.url}>
     <h2>{latestPost.frontmatter.title}</h2>
-    <ImageFrame
-      imgPath={latestPost.frontmatter.mainImage}
-      altText='A women wearing a backpack standing on a trail looking towards a snowcapped mountain'
-      borderText='MT. JEFFERSON, OREGON 2010-07-20'
-    />
+    <ImageFrame imgPath={latestPost.frontmatter.mainImage} altText='' borderText='' />
     <p>{latestPost.frontmatter.description}</p>
   </a>
 </main>
