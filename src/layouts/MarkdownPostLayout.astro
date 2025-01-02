@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 const editDatePresent = frontmatter.editDate.toString().length > 1;
 ---
 
-<Layout title='My Blog'>
+<Layout title=`${frontmatter.title} — Notes from Curtis...`>
   <article>
     <h1>{frontmatter.title}</h1>
     <span>{frontmatter.pubDate.toString().slice(0, 10)}</span>
