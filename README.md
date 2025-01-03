@@ -27,3 +27,4 @@ Images are initially culled/tagged with [digiKam](https://www.digikam.org/), pro
 I recovered blog post from the following old blogs:
 * https://c-barnard.livejournal.com/
 * http://junkdrawer.web44.net/blog/
+* http://oregoncurtis.baywords.com/
