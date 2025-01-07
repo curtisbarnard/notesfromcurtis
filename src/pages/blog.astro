@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const allPosts = await Astro.glob('../pages/posts/*.mdx');
+const postCount = allPosts.length;
+console.log(postCount);
 const sortedPosts = allPosts.sort((a, b) => {
   const aDate = new Date(a.frontmatter.pubDate).valueOf();
   const bDate = new Date(b.frontmatter.pubDate).valueOf();
@@ -12,8 +14,9 @@ const title = 'Archive — Notes from Curtis...';
 <Layout title={title}>
   <main>
     <p>
-      Below you'll find all my posts in reverse chronological order. Simply click on the post to be
-      taken to the full article.
+      Below you'll find all {postCount} of my posts in reverse chronological order. Simply click on the
+      post to be taken to the full article. These post include new posts as well as old post that I recovered
+      from several old blogs that I've had over the years. Enjoy!
     </p>
     <ul>
       {
