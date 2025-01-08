@@ -1,0 +1,62 @@
+---
+interface Props {
+  imgPath: string;
+  imgHeight: string;
+  altText: string;
+  caption: string;
+}
+
+const { imgPath, imgHeight, altText, caption } = Astro.props;
+---
+
+<figure>
+  <img
+    src={'/images/' + imgPath + '-1000w.webp'}
+    alt={altText}
+    srcset={'/images/' + imgPath + '-1000w.webp 1000w, ' + '/images/' + imgPath + '-600w.webp 600w'}
+    sizes='(max-width: 600px) 600px, 1000px'
+    decoding='async'
+    loading='lazy'
+  />
+  <figcaption>{caption}</figcaption>
+</figure>
+
+<style define:vars={{ imgHeight }}>
+  figure {
+    text-align: left;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: hsl(31, 30%, 20%);
+    border-left: 3px solid hsl(31, 30%, 20%);
+    padding-left: 0.5rem;
+  }
+
+  img {
+    box-shadow:
+      0 3px 12px hsla(0, 0%, 0%, 0.05),
+      0 3px 6px hsla(0, 0%, 0%, 0.05);
+  }
+
+  @media (min-width: 1000px) {
+    figure {
+      width: 1000px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    figure {
+      width: 100%;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: var(--imgHeight);
+      object-fit: cover;
+    }
+  }
+</style>
