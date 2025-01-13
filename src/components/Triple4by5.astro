@@ -1,0 +1,113 @@
+---
+interface Props {
+  imgPath1: string;
+  altText1: string;
+  caption1: string;
+  imgPath2: string;
+  altText2: string;
+  caption2: string;
+  imgPath3: string;
+  altText3: string;
+  caption3: string;
+}
+
+const { imgPath1, altText1, caption1, imgPath2, altText2, caption2, imgPath3, altText3, caption3 } =
+  Astro.props;
+---
+
+<div>
+  <figure>
+    <img
+      src={'/images/' + imgPath1 + '-300w.webp'}
+      alt={altText1}
+      srcset={'/images/' +
+        imgPath1 +
+        '-300w.webp 450w, ' +
+        '/images/' +
+        imgPath1 +
+        '-600w.webp 600w'}
+      sizes='(max-width: 600px) calc(100vw - 2rem), (max-width: 1000px) 65ch, 322px'
+      decoding='async'
+      loading='lazy'
+    />
+    <figcaption>{caption1}</figcaption>
+  </figure>
+  <figure>
+    <img
+      src={'/images/' + imgPath2 + '-300w.webp'}
+      alt={altText2}
+      srcset={'/images/' +
+        imgPath2 +
+        '-300w.webp 450w, ' +
+        '/images/' +
+        imgPath2 +
+        '-600w.webp 600w'}
+      sizes='(max-width: 600px) calc(100vw - 2rem), (max-width: 1000px) 600px, 322px'
+      decoding='async'
+      loading='lazy'
+    />
+    <figcaption>{caption2}</figcaption>
+  </figure>
+  <figure>
+    <img
+      src={'/images/' + imgPath3 + '-300w.webp'}
+      alt={altText3}
+      srcset={'/images/' +
+        imgPath3 +
+        '-300w.webp 450w, ' +
+        '/images/' +
+        imgPath3 +
+        '-600w.webp 600w'}
+      sizes='(max-width: 600px) calc(100vw - 2rem), (max-width: 1000px) 600px, 322px'
+      decoding='async'
+      loading='lazy'
+    />
+    <figcaption>{caption3}</figcaption>
+  </figure>
+</div>
+
+<style>
+  div {
+    margin-top: 1rem;
+  }
+
+  img,
+  figcaption {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: hsl(31, 30%, 20%);
+    border-left: 3px solid hsl(31, 30%, 20%);
+    padding-left: 0.5rem;
+  }
+
+  img {
+    box-shadow:
+      0 3px 12px hsla(0, 0%, 0%, 0.05),
+      0 3px 6px hsla(0, 0%, 0%, 0.05);
+  }
+
+  @media (min-width: 1000px) {
+    div {
+      display: grid;
+      grid-template-columns: 322px 322px 322px;
+      width: 1000px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    figcaption {
+      margin-bottom: 1rem;
+    }
+  }
+</style>
