@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 const allPosts = await Astro.glob('../pages/posts/*.mdx');
 const postCount = allPosts.length;
-console.log(postCount);
+
 const sortedPosts = allPosts.sort((a, b) => {
   const aDate = new Date(a.frontmatter.pubDate).valueOf();
   const bDate = new Date(b.frontmatter.pubDate).valueOf();
