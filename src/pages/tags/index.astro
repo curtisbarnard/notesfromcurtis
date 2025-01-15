@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const allPosts = Object.values(import.meta.glob('../posts/*.mdx', { eager: true }));
+
+const tagsWithCounts = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())].map(
+  (tag) => {
+    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
+
+    const tagCapitalized = tag
+      .split(' ')
+      .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+    return [tagCapitalized, filteredPosts.length];
+  },
+);
+
+const sortedTags = tagsWithCounts.sort((a, b) => b[1] - a[1]);
+
+const title = 'All Tags — Notes from Curtis...';
+---
+
+<Layout title={title}>
+  <main>
+    <p>These are all the tags used on my notes, sorted by reducing frequency.</p>
+    <div>
+      {
+        sortedTags.map((tag) => (
+          <p>
+            <a href={`/tags/${tag[0].toLowerCase()}`}>
+              {tag[0]} ({tag[1]} notes)
+            </a>
+          </p>
+        ))
+      }
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 65ch;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  a,
+  a:visited {
+    color: hsl(0, 0%, 0%);
+  }
+
+  a:hover {
+    color: rgb(255, 161, 61);
+  }
+</style>
