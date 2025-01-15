@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const allPosts = Object.values(import.meta.glob('../posts/*.mdx', { eager: true }));
+  const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const tagCapitalized = tag
+  .split(' ')
+  .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ');
+
+const { posts } = Astro.props;
+const postCount = posts.length;
+const sortedPosts = posts.sort((a: any, b: any) => {
+  const aDate = new Date(a.frontmatter.pubDate).valueOf();
+  const bDate = new Date(b.frontmatter.pubDate).valueOf();
+  return bDate - aDate;
+});
+---
+
+<Layout title=`Posts about ${tagCapitalized}` `>
+  <main>
+    <p>
+      Below you'll find all {postCount} of my notes tagged with <strong>{tagCapitalized}</strong> in
+      reverse chronological order. Simply click on the post to be taken to the full article. Enjoy!
+    </p>
+    <ul>
+      {
+        sortedPosts.map((post: any) => (
+          <li>
+            <a href={post.url}>
+              <h2>{post.frontmatter.title}</h2>
+              <span class='pubDate'>{post.frontmatter.pubDate.toString().slice(0, 10)}</span>
+              <p>{post.frontmatter.description}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 65ch;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 2rem 0;
+  }
+
+  h2 {
+    display: inline;
+    margin: 0 0 0.2rem 0;
+  }
+
+  li p {
+    margin: 0;
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  a:visited {
+    color: hsl(0, 0%, 0%);
+  }
+
+  a:hover {
+    color: rgb(255, 161, 61);
+  }
+
+  .pubDate {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+</style>
