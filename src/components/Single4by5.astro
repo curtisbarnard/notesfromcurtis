@@ -1,0 +1,41 @@
+---
+// This component uses images that have a 4:5 aspect ratio and are 600px wide.
+
+interface Props {
+  imgPath1: string;
+  altText1: string;
+  caption1: string;
+}
+
+const { imgPath1, altText1, caption1 } = Astro.props;
+---
+
+<figure>
+  <img src={'/images/' + imgPath1 + '-600w.webp'} alt={altText1} decoding='async' loading='lazy' />
+  <figcaption>{caption1}</figcaption>
+</figure>
+
+<style>
+  img,
+  figcaption {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 1rem 0 0 0;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: hsl(31, 30%, 20%);
+    border-left: 3px solid hsl(31, 30%, 20%);
+    padding-left: 0.5rem;
+  }
+
+  img {
+    box-shadow:
+      0 3px 12px hsla(0, 0%, 0%, 0.05),
+      0 3px 6px hsla(0, 0%, 0%, 0.05);
+  }
+</style>
