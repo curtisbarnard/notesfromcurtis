@@ -6,4 +6,10 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   site: 'https://notes.curtisbarnard.com',
   integrations: [mdx()],
+  markdown: {
+    shikiConfig: {
+      theme: 'catppuccin-frappe',
+      wrap: true,
+    }
+  }
 });
