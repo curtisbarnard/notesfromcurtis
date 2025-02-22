@@ -16,13 +16,13 @@ import DropCap from '../../components/DropCap.astro';
 
 <DropCap letter='T' />
 
-here seems to be some confusion on which mode will give you the highest quality video when recording 120fps video on the a6700. Movie mode can shoot at a [maximum of 280Mbps](https://helpguide.sony.net/ilc/2320/v1/en/contents/0412B_movie_setting.html), while the S&Q (Slow & Quick) mode can only shoot a maximum of 100Mbps. This has led some people to suggest using movie mode. The other side of it is people saying that if you do the math [you get more data per frame in S&Q Mode](https://youtu.be/d0nt2UmoPu4?si=2z7cOJWVlFtxGb4b&t=126), almost twice as much in fact, so you should use that. While the math made sense I decided to do an experiement myself to confirm.
+here seems to be some confusion on which mode will give you the highest quality video when recording 120fps video on the a6700. Movie mode can shoot at a [maximum of 280Mbps](https://helpguide.sony.net/ilc/2320/v1/en/contents/0412B_movie_setting.html), while the S&Q (Slow & Quick) mode can only shoot a maximum of 100Mbps. This has led some people to suggest using movie mode. The other side of it is people saying that if you do the math [you get more data per frame in S&Q Mode](https://youtu.be/d0nt2UmoPu4?si=2z7cOJWVlFtxGb4b&t=126), almost twice as much in fact, so you should use that. While the math made sense I decided to do an experiment myself to confirm.
 
 ## Test Footage
 
-I filmed two videos back to back shot with the same static content. One was shot in Movie Mode at 120fps, the other in S&Q (Slow & Quick) mode at 120fps with a base rate of 24fps. I typically use a 24fps base for my timelines when editing so this experiement is based around that. Also note that the 24fps isn't 24fps, but 24000/1001 or 23.98fps, likewise 120fps is 120000/1001 or 119.88fps. I used the **XAVC S 4K** file format in both modes as this is the highest quality you can shoot with 120fps. I then set bitrate, color sampling and bit depth at **280M 4:2:2 10bit** for Movie Mode and **100M 4:2:2 10bit** for S&Q Mode.
+I filmed two videos back to back shot with the same static content. One was shot in Movie Mode at 120fps, the other in S&Q (Slow & Quick) mode at 120fps with a base rate of 24fps. I typically use a 24fps base for my timelines when editing so this experiment is based around that. Also note that the 24fps isn't 24fps, but 24000/1001 or 23.98fps, likewise 120fps is 120000/1001 or 119.88fps. I used the **XAVC S 4K** file format in both modes as this is the highest quality you can shoot with 120fps. I then set bit rate, color sampling and bit depth at **280M 4:2:2 10bit** for Movie Mode and **100M 4:2:2 10bit** for S&Q Mode.
 
-I recorded for about 7 seconds in realtime for each clip, then used ffmpeg to take the middle for evaluation. The files are in different frame rates so I'd need to use different second lengths in order to get close to the same total number of frames. The MovieMode file has a frame rate of 120fps so I can take three seconds with this command:
+I recorded for about 7 seconds in real time for each clip, then used ffmpeg to take the middle for evaluation. The files are in different frame rates so I'd need to use different second lengths in order to get close to the same total number of frames. The MovieMode file has a frame rate of 120fps so I can take three seconds with this command:
 ```zsh
 ffmpeg -i MovieMode.mp4 -ss 2 -t 3 -c copy MovieMode-3sec.mp4
 ```
@@ -32,12 +32,12 @@ The S&Q file has a frame rate of 24fps so I would need to capture five times as 
 ffmpeg -i SandQMode.MP4 -ss 9.265 -t 15 -c copy SandQMode-15sec.mp4
 ```
 
-I can use [ffprobe](https://ffmpeg.org/ffprobe.html) to get the average bitrate for each clip in bits per second, then pair it with [awk](https://en.wikipedia.org/wiki/AWK) and simple math to convert it to Mbps. Note that this is the video bitrate and excludes the audio. We do this because S&Q mode doesn’t record audio:
+I can use [ffprobe](https://ffmpeg.org/ffprobe.html) to get the average bit rate for each clip in bits per second, then pair it with [awk](https://en.wikipedia.org/wiki/AWK) and simple math to convert it to Mbps. Note that this is the video bit rate and excludes the audio. We do this because S&Q mode doesn’t record audio:
 ```zsh
 ffprobe -v quiet -show_entries format=bit_rate -of default=noprint_wrappers=1:nokey=1 video-file.mp4 | awk '{printf "%.2f Mbps\n", $1/1000000}'
 ```
 
-We can also use ffprobe to grab the framerate for the video file and use awk to format it:
+We can also use ffprobe to grab the frame rate for the video file and use awk to format it:
 ```zsh
 ffprobe -v quiet -select_streams v:0 -show_entries stream=r_frame_rate -of default=noprint_wrappers=1:nokey=1 video-file.mp4| awk -F'/' '{if($2) printf "%.2ffps\n", $1/$2; else print $1"fps"}'
 ```
@@ -61,7 +61,7 @@ SandQMode-15sec.mp4
 97.19 Mbps
 ```
 
-Cool! The bitrates are different and align closely with what I set in the camera. The Movie Mode file is 195% more data per second than the S&Q file. That settles it, Movie Mode is better. 
+Cool! The bit rates are different and align closely with what I set in the camera. The Movie Mode file is 195% more data per second than the S&Q file. That settles it, Movie Mode is better. 
 
 Wrong. 
 
@@ -71,7 +71,7 @@ I could do some simple math to prove it, but I'll keep manipulating the files to
 ffmpeg -itsscale 5.0 -i MovieMode-3sec.mp4 -vcodec copy MovieMode-15sec.mp4
 ```
 
-This will multiply the PTSs ([Presentation Time Stamp](https://en.wikipedia.org/wiki/Presentation_timestamp)) so that they stay on the screen five times longer, or 23.98fps, but it will just copy the existing codec without re-encoding. I can then run the function from earlier against the MovieMode-15sec.mp4 file to get the bitrate and framerate:
+This will multiply the PTSs ([Presentation Time Stamp](https://en.wikipedia.org/wiki/Presentation_timestamp)) so that they stay on the screen five times longer, or 23.98fps, but it will just copy the existing codec without re-encoding. I can then run the function from earlier against the MovieMode-15sec.mp4 file to get the bit rate and frame rate:
 ```zsh
 MovieMode-15sec.mp4
 23.98fps
@@ -85,7 +85,7 @@ SandQMode-15sec.mp4
 97.19 Mbps
 ```
 
-Notice the difference now? The frame rates are the same, but the bitrates are not. In fact S&Q is about 69% more data per second than Movie Mode is. We can do some simple math to make some sense of this. S&Q mode is recording 120fps, but that is then being transformed in camera into 24fps at 100Mbps. The Movie Mode is recording 120fps at 280Mbps. If the intention is to slow this Movie Mode footage down to 24fps the new bitrate can be found by taking dividing the new framerate by the older framerate and multiplying it by the old bitrate:
+Notice the difference now? The frame rates are the same, but the bit rates are not. In fact S&Q is about 69% more data per second than Movie Mode is. We can do some simple math to make some sense of this. S&Q mode is recording 120fps, but that is then being transformed in camera into 24fps at 100Mbps. The Movie Mode is recording 120fps at 280Mbps. If the intention is to slow this Movie Mode footage down to 24fps the new bit rate can be found by taking dividing the new frame rate by the older frame rate and multiplying it by the old bit rate:
 ```
 24fps/120fps * 280 Mbps = 56 Mbps
 ```
@@ -93,4 +93,4 @@ That's pretty close to the 57.57 Mbps that I got on the real world files.
 
 ## Conclusion
 
-If you want the highest quality 120fps video that you are going to slow down to 24fps **AND** you don’t need audio then use S&Q Mode. If you need audio **OR** you want the highest quality for playing back at greater than 30fps you should use Movie Mode. Is there a big subjective difference in the image quality of one vs the other? I'm not sure as I have tested both enough side by side to see. For my use cases I'll likely just shoot in S&Q as I rarely need 5x slo-motion, will probably use it for B-Roll, won't need the audio and can handle larger file size.
+If you want the highest quality 120fps video that you are going to slow down to 24fps **AND** you don’t need audio then use S&Q Mode. If you need audio **OR** you want the highest quality for playing back at greater than 30fps you should use Movie Mode. Is there a big subjective difference in the image quality of one vs the other? I'm not sure as I have tested both enough side by side to see. For my use cases I'll likely just shoot in S&Q as I rarely need 5x slow-motion, will probably use it for B-Roll, won't need the audio and can handle larger file size.
