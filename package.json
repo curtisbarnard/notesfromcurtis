@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.5",
-    "@astrojs/mdx": "^2.1.1",
-    "@astrojs/rss": "^4.0.11",
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/mdx": "^4.3.12",
+    "@astrojs/rss": "^4.0.14",
     "@fontsource/courier-prime": "^5.0.18",
     "@fontsource/lora": "^5.0.13",
-    "astro": "^4.4.2",
+    "astro": "^5.16.1",
     "typescript": "^5.3.3"
   }
 }
