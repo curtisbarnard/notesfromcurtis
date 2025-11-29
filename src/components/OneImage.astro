@@ -7,25 +7,25 @@ import type { ImageMetadata } from 'astro';
 import { Picture } from 'astro:assets';
 
 interface Props {
-  img1: ImageMetadata;
-  altText1: string;
-  caption1?: string;
+  img: ImageMetadata;
+  altText: string;
+  caption?: string;
 }
 
-const { img1, altText1, caption1, } = Astro.props;
+const { img, altText, caption, } = Astro.props;
 ---
 
 <div>
   <figure>
     <Picture
-      src={img1}
-      alt={altText1}
+      src={img}
+      alt={altText}
       widths={[400, 645, 800, 1290]}
       formats={['webp', 'avif']}
       sizes="(max-width: 600px) calc(100vw - 2rem), 645px"
       loading="lazy"
     />
-    { caption1 && <figcaption>{caption1}</figcaption> }
+    { caption && <figcaption>{caption}</figcaption> }
   </figure>
 </div>
 

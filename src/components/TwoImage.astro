@@ -30,7 +30,7 @@ const { img1, altText1, caption1, img2, altText2, caption2 } = Astro.props;
     />
     { caption1 && <figcaption>{caption1}</figcaption> }
   </figure>
-  <figure>
+  <figure class='secondPicture'>
     <Picture
       src={img2}
       alt={altText2}
@@ -91,5 +91,8 @@ const { img1, altText1, caption1, img2, altText2, caption2 } = Astro.props;
     figcaption {
       margin-bottom: 1rem;
     }
+    .secondPicture {
+    margin-top: 1rem;
+  }
   }
 </style>
