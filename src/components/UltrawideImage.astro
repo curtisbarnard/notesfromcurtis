@@ -18,12 +18,9 @@ const { img, altText, caption } = Astro.props;
 // Calculate mobile height from image aspect ratio
 // We calculate what height would be at that the targetMobileWidth, then ensure a minimum for visibility
 const aspectRatio = img.width / img.height;
-const targetMobileWidth = 645;
-const calculatedHeightAtTargetWidth = targetMobileWidth / aspectRatio;
-
-// Use the calculated height, but ensure it's at least 250px for visibility
-const minHeight = 250;
-const calculatedHeight = Math.max(minHeight, calculatedHeightAtTargetWidth);
+const targetMobileWidth = 500;
+const calculatedHeight = targetMobileWidth / aspectRatio;
+const mobileHeightPx = `${calculatedHeight}px`;
 ---
 
 <figure>
@@ -38,7 +35,7 @@ const calculatedHeight = Math.max(minHeight, calculatedHeightAtTargetWidth);
   { caption && <figcaption>{caption}</figcaption> }
 </figure>
 
-<style define:vars={{ mobileHeight: calculatedHeight }}>
+<style define:vars={{ mobileHeight: mobileHeightPx }}>
   figure {
     text-align: left;
     margin: 1rem 0 1rem 0;
@@ -52,6 +49,7 @@ const calculatedHeight = Math.max(minHeight, calculatedHeightAtTargetWidth);
   img {
     width: 100%;
     max-width: 100%;
+    height: auto;
     display: block;
     box-shadow:
       0 3px 12px hsla(0, 0%, 0%, 0.05),
@@ -83,8 +81,9 @@ const calculatedHeight = Math.max(minHeight, calculatedHeightAtTargetWidth);
     img {
       width: 100%;
       height: var(--mobileHeight);
-      min-height: 250px; /* Ensure minimum visibility even on very small screens */
+      min-height: var(--mobileHeight);
       object-fit: cover;
+      object-position: center;
     }
   }
 </style>
