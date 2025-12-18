@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ImageFrame from '../components/ImageFrame.astro';
+import OneImage from '../components/OneImage.astro';
+
 const allPosts = await Astro.glob('../pages/posts/*.mdx');
 const sortedPosts = allPosts.sort((a, b) => {
   const aDate = new Date(a.frontmatter.pubDate).valueOf();
@@ -8,6 +9,16 @@ const sortedPosts = allPosts.sort((a, b) => {
   return bDate - aDate;
 });
 const latestPost = sortedPosts[0];
+
+const images = await Astro.glob('../assets/images/*.webp');
+const imageMap = Object.fromEntries(
+  images.map((img) => [
+    img.default.src.split('/').pop().split('?').shift(),
+    img.default
+  ])
+);
+const img = imageMap[latestPost.frontmatter.mainImage];
+
 const title = 'Notes from Curtis...';
 ---
 
@@ -15,7 +26,7 @@ const title = 'Notes from Curtis...';
 <main>
   <a href={latestPost.url}>
     <h2>{latestPost.frontmatter.title}</h2>
-    <ImageFrame imgPath={latestPost.frontmatter.mainImage} altText='' borderText='' />
+    <OneImage img={img} altText='' />
     <p>{latestPost.frontmatter.description}</p>
   </a>
 </main>
