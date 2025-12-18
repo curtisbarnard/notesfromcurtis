@@ -1,0 +1,60 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'How I study Japanese'
+pubDate: 2025-04-15
+editDate: ''
+description: 'My current methods for studying Japanese and plan going forward'
+tags: ['japanese']
+---
+import DropCap from '../../components/DropCap.astro';
+
+<DropCap letter='I' />
+
+started learning Japanese in 2008, in December of 2024 I missed passing the JLPT N3 by one point. That's not a lot of progress in 16 years so you shouldn't take my advice. If you want to know my current methods continue reading. I'll make a follow up posts on various things I've done over the years. My main strategy for study right now is immersion as I've made it to a point were I can read and listen to simpler content that is on topics that interest me. 
+
+## NHK Web Easy
+While I had dabbled on and off over the years at glancing at articles I decided to make it a daily habit to read a couple articles. I was already setting up RSS feeds for other sites so I could migrate off social media so I found X site that has an RSS feed for NHK easy news. I turn of the furigana and use Yomitan to quickly look at meanings for words. If I find the word interesting I'll add it to a Yomitan deck in Anki. I like this as it adds the sentence the word is in as well which helps reinforce the meaning for me. I've found that I have a better retention rate with these cards vs other decks.
+
+## Graded Readers
+I'd heard of these before, but never really got into them as they looked boring on first glance. Well I came across a link to the free PDFs again and decided to give them a go. The advice is to starting reading at one level below your own and not use a dictionary to look up words, try to pick up the meaning from context.
+
+I had passed N4 so I decided to start with L1 readers which are ~N4 level. I was able to breeze through all the free PDFs on tadoku.org in a week or so. When moving on to L2 I wanted some physical books so I could easily read them at lunch and not use a small phone screen so I used interlibrary loan at my local library to request them. I've been reading about 1 story a day at lunch and will only look up some words after reading the whole story. The graded readers have been great as a lot of the content is pretty interesting, it doesn't feel like I'm reading a kids book, and it gives me confidence as I'm able to read pretty quickly and comprehend the story without stopping. Currently I don't add any words to my Anki from the graded readers I try to just use them as immersion.
+
+## Textbooks
+Currently I'm working through two texts, Genki II and Quartet I. The correct way would be to do Genki II first, but I only have it digitally so it's harder to study with when I'm not sitting in front of a computer. I have the textbook and workbook for Quartet I so it's easy for me to study with while I eat lunch at work.
+
+## Meetups
+I've setup a weekly lunch at my work with other people that are learning or already speak Japanese quite well.
+
+## Podcasts
+
+Nihongo con teppei and sometimes bilingual news
+
+## Youtube
+
+Tokini Andy for genki and quartet review. 
+
+## Anki
+While I enjoyed JPDB a lot I'd occasionally get frustrated that I could study because of a bad Internet connection and I want the ability to better tune and control my own cards. I decided to move back to Anki, but try and implement the breakdown approach of vocab -> Kanji -> radicals. I also needed to get all my JPDB cards back into Anki. I wrote a couple scripts that make use of AnkiConnect, which has an excellent API and documentation, to accomplish both.
+
+The first brought in all my known and learning words and tagged them as known or new. I went through and just did reviews on the words that I already knew and would answer easy if they were easy. I was then able to use Ankis FSRS to tune the algorithm. I did an update pretty much everyday after studying so that marking the easy buttons quickly moved the cards into the future. Because I knew a lot of the words I was able to get through the 1500 cards within a week and then within 3 weeks they were months in the future so I wasn't seeing too many “unnecessary” cards.
+
+The second script I run every week or when I need to unlock more cards. It does a few things. It takes the vocabulary words I've added from yomitan and breaks it down into it's kanji components. It then creates kanji cards for those kanji if they don't exist and breaks the kanji down into radicals. It then creates cards for those radicals if they don't exist. The radical cards are not suspended so I can study them right away, but the kanji and vocabulary cards are suspended until I “know” the components (kanji or radicals). I've set my known threshold if the card has an interval larger than 21 days as this mirrors Anki's mature threshold. If you're interested in the script you can see them on my github.
+
+My goal is to study Anki for 30 minutes a day, focusing on reviews of vocabulary first, then reviews of kanji/radicals, then new vocab and then new kanji/radicals. We'll see how my time dedication plays out over the next year. Two months into the decks existence I'm averaging about 15 minutes per day and about 100 reviews.
+
+## Yomitan
+
+Previously I only had yomitan setup on my desktop, but it seems there might've been some updates with Firefox on Android recently that allows it to work on mobile. For flash card creation Yomitan requires Anki and either the AnkiConnect add-on (desktop) or the AnkiconnectAndroid app (mobile). I'll go into the weeds of how I currently have yomitan configured in case anyone else wants to replicate.
+
+### Dictionaries
+
+I use the Jitendex and JPDBv2 that you can just download in the settings. Perhaps when I get more fluent I'll introduce a Japanese to Japanese dictionary.
+
+### Scanning
+
+On mobile I've tweaked the settings mostly to match what is suggested in the AnkiconnectAndroid README. The main tweak I've made is to turn off “Search text with non-Japanese, Chinese, or Cantonese characters” so that I don't get the popup on english websites
+
+### Anki
+
+In the anki settings I tag my cards with “yomitan” and “locked”. The locked tag is used in my parsing script above. I also check for duplicates across all models, the duplicate card scope is set to Deck root and I prevent adding. On desktop I have it suspend new cards, but there seems to be a bug with this on mobile currently so I don't have it enabled.
