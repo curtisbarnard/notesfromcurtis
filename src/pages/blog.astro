@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const allPosts = await Astro.glob('../pages/posts/*.mdx');
+const allPostsModules = import.meta.glob<{ frontmatter: any; url: string }>('../pages/posts/*.mdx');
+const allPosts = await Promise.all(
+  Object.values(allPostsModules).map((module) => module())
+);
 const postCount = allPosts.length;
 
 const sortedPosts = allPosts.sort((a, b) => {
