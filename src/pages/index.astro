@@ -1,7 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import OneImage from '../components/OneImage.astro';
-import type { ImageMetadata } from 'astro';
 
 const allPostsModules = import.meta.glob<{ frontmatter: any; url: string }>('../pages/posts/*.mdx');
 const allPosts = await Promise.all(
@@ -12,30 +10,39 @@ const sortedPosts = allPosts.sort((a, b) => {
   const bDate = new Date(b.frontmatter.pubDate).valueOf();
   return bDate - aDate;
 });
-const latestPost = sortedPosts[0];
-
-const imagesModules = import.meta.glob<{ default: ImageMetadata }>('../assets/images/*.webp', { eager: true });
-const imageMap = Object.fromEntries(
-  Object.entries(imagesModules).map(([path, img]) => {
-    const filename = path.split('/').pop() || '';
-    return [filename, img.default];
-  })
-) as Record<string, ImageMetadata>;
-// Try to match with or without .webp extension
-const mainImage = latestPost.frontmatter.mainImage;
-const img = imageMap[mainImage] || imageMap[mainImage + '.webp'];
 
 const title = 'Notes from Curtis...';
+
+const postCount = allPosts.length;
 ---
 
-<Layout title={title} />
-<main>
-  <a href={latestPost.url}>
-    <h2>{latestPost.frontmatter.title}</h2>
-    {img && <OneImage img={img} altText='' />}
-    <p>{latestPost.frontmatter.description}</p>
-  </a>
-</main>
+<Layout title={title}>
+  <main>
+    <p>
+      Below you'll find all {postCount} of my notes in reverse chronological order. Simply click on the
+      post to be taken to the full article. These notes include new notes as well as old notes that I
+      recovered from several old blogs that I've had over the years.
+    </p>
+    <p>
+      If you'd rather browse the notes by topic please head over to my <a href='/tags'
+        ><strong>tags</strong></a
+      > page to find a list of all tags.
+    </p>
+    <ul>
+      {
+        sortedPosts.map((post) => (
+          <li>
+            <a href={post.url}>
+              <h2>{post.frontmatter.title}</h2>
+              <span class='pubDate'>{post.frontmatter.pubDate.toString().slice(0, 10)}</span>
+              <p>{post.frontmatter.description}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>
 
 <style>
   main {
