@@ -18,6 +18,33 @@
         "notes": "Uncomfortable, but it seems like it set out to do that by 'documenting' kids growing up on the streets in the 90's"
     },
     {
+        "id": 548,
+        "title": "Rashomon",
+        "release_year": 1950,
+        "watch_date": "1970-01-01",
+        "genre": "Crime",
+        "rating": 4,
+        "notes": "A good early look at interesting storytelling an interesting storytelling technique. Maybe a little slow moving at times."
+    },
+    {
+        "id": 45706,
+        "title": "Tokyo Drifter",
+        "release_year": 1966,
+        "watch_date": "1970-01-01",
+        "genre": "Thriller",
+        "rating": 4,
+        "notes": "A really good old school yakuza movie."
+    },
+    {
+        "id": 2605,
+        "title": "Short Circuit",
+        "release_year": 1986,
+        "watch_date": "2026-02-22",
+        "genre": "Science Fiction",
+        "rating": 2,
+        "notes": "The robot is the best actor, Norris was enthralled though."
+    },
+    {
         "id": 329,
         "title": "Jurassic Park",
         "release_year": 1993,
