@@ -1,0 +1,204 @@
+---
+import movies from '../data/movies.json';
+---
+
+<div class="table-container">
+  <table>
+  <thead>
+    <tr>
+      <th data-column="title">Title <span class="sort-indicator"></span></th>
+      <th data-column="rating">Rating <span class="sort-indicator"></span></th>
+      <th data-column="release_year">Date <span class="sort-indicator"></span></th>
+      <th data-column="genre">Genre <span class="sort-indicator"></span></th>
+      <th data-column="watch_date">Watched <span class="sort-indicator"></span></th>
+      <th>Notes <span class="sort-indicator"></span></th>
+    </tr>
+  </thead>
+  <tbody>
+    {movies.sort((a, b) => a.title.localeCompare(b.title))
+    .sort((a, b) => {
+      const aVal = a.watch_date || "0000-00-00";
+      const bVal = b.watch_date || "0000-00-00";
+      if (aVal < bVal) return 1;
+      if (aVal > bVal) return -1;
+      return 0;
+    })
+    .map((movie) => (
+      <tr>
+        <td><a href={`https://www.themoviedb.org/movie/${movie.id}`}>{movie.title}</a></td>
+        <td>{movie.rating ? `${movie.rating}` : ''}</td>
+        <td>{movie.release_year}</td>
+        <td>{movie.genre}</td>
+        <td>{movie.watch_date == "1970-01-01" ? "?" : movie.watch_date}</td>
+        <td>{movie.notes}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</div>
+
+<style>
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1rem 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid hsl(30, 20%, 90%);
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid hsl(30, 20%, 90%);
+    vertical-align: middle;
+  }
+  th {
+    background-color: hsl(30, 30%, 98%);
+    font-weight: 600;
+    position: relative;
+  }
+  th[data-column] {
+    cursor: pointer;
+    user-select: none;
+    padding-right: 1.5rem; /* Space for sort indicator */
+  }
+  th[data-column]:hover {
+    background-color: hsl(36, 56%, 85%);
+  }
+  tr {
+    background-color: hsl(30, 10%, 100%);
+  }
+  tbody tr:hover {
+    background-color: hsl(36, 56%, 95%);
+  }
+  .sort-indicator {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+  .sort-indicator.active {
+    opacity: 1;
+  }
+  a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 161, 61);
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.85rem;
+      min-width: 600px;
+    }
+    th, td {
+      padding: 10px 6px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    table {
+      font-size: 0.8rem;
+      min-width: 550px;
+    }
+    th, td {
+      padding: 8px 5px;
+    }
+    th[data-column] {
+      padding-right: 20px;
+    }
+  }
+</style>
+
+<script define:vars={{ movies }}>
+  let sortColumn = null;
+  let sortDirection = 'asc';
+
+  function updateSortIndicators() {
+    document.querySelectorAll('.sort-indicator').forEach(indicator => {
+      indicator.classList.remove('active');
+      indicator.textContent = '';
+    });
+    if (sortColumn) {
+      const th = document.querySelector(`th[data-column="${sortColumn}"]`);
+      if (th) {
+        const indicator = th.querySelector('.sort-indicator');
+        if (indicator) {
+          indicator.classList.add('active');
+          indicator.textContent = sortDirection === 'asc' ? '↑' : '↓';
+        }
+      }
+    }
+  }
+
+  function sortMovies(column) {
+    if (sortColumn === column) {
+      sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortColumn = column;
+      sortDirection = 'asc';
+    }
+
+    movies.sort((a, b) => {
+      let aVal = a[column];
+      let bVal = b[column];
+
+      if (column === 'rating') {
+        aVal = aVal || 0;
+        bVal = bVal || 0;
+      }
+
+      if (column === 'watch_date') {
+        aVal = aVal || "0000-00-00";
+        bVal = bVal || "0000-00-00";
+      }
+
+      if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
+      if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    updateSortIndicators();
+  }
+
+  function renderTable() {
+    const rows = document.querySelectorAll('tbody tr');
+    movies.forEach((movie, index) => {
+      const row = rows[index];
+      if (row) {
+        const cells = row.querySelectorAll('td');
+        const link = cells[0].querySelector('a');
+        if (link) {
+          link.textContent = movie.title;
+          link.href = `https://www.themoviedb.org/movie/${movie.id}`;
+        }
+        cells[1].textContent = movie.rating ? movie.rating : '';
+        cells[2].textContent = movie.release_year;
+        cells[3].textContent = movie.genre;
+        cells[4].textContent = movie.watch_date == "1970-01-01" ? "?" : movie.watch_date;
+        cells[5].textContent = movie.notes;
+      }
+    });
+  }
+
+  document.querySelectorAll('th[data-column]').forEach(th => {
+    th.addEventListener('click', () => {
+      const column = th.dataset.column;
+      sortMovies(column);
+      renderTable();
+    });
+  });
+
+  updateSortIndicators();
+</script>

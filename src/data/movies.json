@@ -1,0 +1,605 @@
+[
+    {
+        "id": 329,
+        "title": "Jurassic Park",
+        "release_year": 1993,
+        "watch_date": "1970-01-01",
+        "genre": "Adventure",
+        "rating": 5,
+        "notes": "One of my top three movies of all time. What can I say I was 5 when it came out."
+    },
+    {
+        "id": 293,
+        "title": "A River Runs Through It",
+        "release_year": 1992,
+        "watch_date": "1970-01-01",
+        "genre": "Drama",
+        "rating": 5,
+        "notes": "One of my top three movies of all time. I saw it as a teenager in the prime of my fly fishing years."
+    },
+    {
+        "id": 12477,
+        "title": "Grave of the Fireflies",
+        "release_year": 1992,
+        "watch_date": "1970-01-01",
+        "genre": "Drama",
+        "rating": 5,
+        "notes": "One of my top three movies of all time. I remember on one of trips to Japan watching it with Tram and both of use just crying in the hotel room."
+    },
+    {
+        "id": 7520,
+        "title": "Cocktail",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Romance",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9872,
+        "title": "Explorers",
+        "release_year": "1985",
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 42789,
+        "title": "Ride the Wild Surf",
+        "release_year": "1964",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 115,
+        "title": "The Big Lebowski",
+        "release_year": "1998",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 2493,
+        "title": "The Princess Bride",
+        "release_year": "1987",
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 90,
+        "title": "Beverly Hills Cop",
+        "release_year": "1984",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 2300,
+        "title": "Space Jam",
+        "release_year": "1996",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 11528,
+        "title": "The Sandlot",
+        "release_year": "1993",
+        "watch_date": null,
+        "genre": "Family",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 10830,
+        "title": "Matilda",
+        "release_year": "1996",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 36819,
+        "title": "Time Bandits",
+        "release_year": "1981",
+        "watch_date": null,
+        "genre": "Family",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 771,
+        "title": "Home Alone",
+        "release_year": "1990",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 8844,
+        "title": "Jumanji",
+        "release_year": "1995",
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 10414,
+        "title": "The Mighty Ducks",
+        "release_year": "1992",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 9377,
+        "title": "Ferris Bueller's Day Off",
+        "release_year": "1986",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 9340,
+        "title": "The Goonies",
+        "release_year": "1985",
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 10150,
+        "title": "The Last Unicorn",
+        "release_year": "1982",
+        "watch_date": null,
+        "genre": "Fantasy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 13597,
+        "title": "Labyrinth",
+        "release_year": "1986",
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 131739,
+        "title": "Isoroku Yamamoto, the Commander-in-Chief of the Combined Fleet",
+        "release_year": "2011",
+        "watch_date": null,
+        "genre": "History",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 11645,
+        "title": "Ran",
+        "release_year": "1985",
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 10019,
+        "title": "Mannequin",
+        "release_year": "1987",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 21519,
+        "title": "Project A",
+        "release_year": "1983",
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 83183,
+        "title": "Tales of a Golden Geisha",
+        "release_year": "1990",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 42095,
+        "title": "The Funeral",
+        "release_year": "1984",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 4886,
+        "title": "And Then There Were None",
+        "release_year": "1945",
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 42113,
+        "title": "The Ballad of Narayama",
+        "release_year": "1983",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 525,
+        "title": "The Blues Brothers",
+        "release_year": "1980",
+        "watch_date": null,
+        "genre": "Music",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 340487,
+        "title": "Certain Women",
+        "release_year": "2016",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 53620,
+        "title": "Commando Duck",
+        "release_year": "1944",
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 935,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "release_year": "1964",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 25858,
+        "title": "Drunken Angel",
+        "release_year": "1948",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 127372,
+        "title": "Emperor",
+        "release_year": "2012",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 1408208,
+        "title": "Exit 8",
+        "release_year": "2025",
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 207036,
+        "title": "Filibus",
+        "release_year": "1915",
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 136,
+        "title": "Freaks",
+        "release_year": "1932",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 783,
+        "title": "Gandhi",
+        "release_year": "1982",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 9434,
+        "title": "Grosse Pointe Blank",
+        "release_year": "1997",
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 85,
+        "title": "Raiders of the Lost Ark",
+        "release_year": "1981",
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 1885,
+        "title": "The Karate Kid",
+        "release_year": "1984",
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 8856,
+        "title": "The Karate Kid Part II",
+        "release_year": "1986",
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 466420,
+        "title": "Killers of the Flower Moon",
+        "release_year": "2023",
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 1379266,
+        "title": "Kokuho",
+        "release_year": "2025",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 70846,
+        "title": "Love & Pop",
+        "release_year": "1998",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 832,
+        "title": "M",
+        "release_year": "1931",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 13889,
+        "title": "Madadayo",
+        "release_year": "1993",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 43487,
+        "title": "No Regrets for Our Youth",
+        "release_year": "1946",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 315846,
+        "title": "Our Little Sister",
+        "release_year": "2015",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 792307,
+        "title": "Poor Things",
+        "release_year": "2023",
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 32690,
+        "title": "Scandal",
+        "release_year": "1950",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 992,
+        "title": "Sherlock Jr.",
+        "release_year": "1924",
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 505192,
+        "title": "Shoplifters",
+        "release_year": "2018",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 25768,
+        "title": "Steamboat Bill, Jr.",
+        "release_year": "1928",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 31411,
+        "title": "The Cameraman",
+        "release_year": "1928",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 20506,
+        "title": "The Eel",
+        "release_year": "1997",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 961,
+        "title": "The General",
+        "release_year": "1926",
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 24774,
+        "title": "The Idiot",
+        "release_year": "1951",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 37513,
+        "title": "The Quiet Duel",
+        "release_year": "1949",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 3777,
+        "title": "Throne of Blood",
+        "release_year": "1957",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 13398,
+        "title": "Tokyo Godfathers",
+        "release_year": "2003",
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 11165,
+        "title": "Tora! Tora! Tora!",
+        "release_year": "1970",
+        "watch_date": null,
+        "genre": "War",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 312921,
+        "title": "Horse",
+        "release_year": "1941",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 745993,
+        "title": "Waikiki",
+        "release_year": "2023",
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 13667,
+        "title": "Better Off Dead...",
+        "release_year": "1985",
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 352379,
+        "title": "The Air-Conditioned Eden",
+        "release_year": "1996",
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": null
+    },
+    {
+        "id": 248087,
+        "title": "The Eternal Zero",
+        "release_year": "2013",
+        "watch_date": null,
+        "genre": "War",
+        "rating": null,
+        "notes": null
+    }
+]
