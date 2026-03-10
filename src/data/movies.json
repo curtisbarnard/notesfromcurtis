@@ -682,5 +682,1616 @@
         "genre": "War",
         "rating": null,
         "notes": null
+    },
+    {
+        "id": 30266,
+        "title": "20,000 Leagues Under the Sea",
+        "release_year": 1916,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 4513,
+        "title": "30 Days of Night",
+        "release_year": 2007,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 62,
+        "title": "2001: A Space Odyssey",
+        "release_year": 1968,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 185,
+        "title": "A Clockwork Orange",
+        "release_year": 1971,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 391,
+        "title": "A Fistful of Dollars",
+        "release_year": 1964,
+        "watch_date": null,
+        "genre": "Western",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 149,
+        "title": "Akira",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 13199,
+        "title": "American Me",
+        "release_year": 1992,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1411227,
+        "title": "Ancient Forests: Rage Over Trees",
+        "release_year": 1989,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 300668,
+        "title": "Annihilation",
+        "release_year": 2018,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 81860,
+        "title": "A Quiet Life",
+        "release_year": 1995,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10974,
+        "title": "Armour of God",
+        "release_year": 1986,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 766,
+        "title": "Army of Darkness",
+        "release_year": 1992,
+        "watch_date": null,
+        "genre": "Fantasy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 211722,
+        "title": "A Spell to Ward Off the Darkness",
+        "release_year": 2013,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 24163,
+        "title": "As Tears Go By",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 747188,
+        "title": "Asteroid City",
+        "release_year": 2023,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 42011,
+        "title": "A Taxing Woman",
+        "release_year": 1987,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 41962,
+        "title": "A Taxing Woman's Return",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 26398,
+        "title": "At the Earth's Core",
+        "release_year": 1976,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11075,
+        "title": "Audition",
+        "release_year": 2000,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 3176,
+        "title": "Battle Royale",
+        "release_year": 2000,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 6978,
+        "title": "Big Trouble in Little China",
+        "release_year": 1986,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1052,
+        "title": "Blow-Up",
+        "release_year": 1966,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 475,
+        "title": "Bonnie and Clyde",
+        "release_year": 1967,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 13685,
+        "title": "Bottle Rocket",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 17905,
+        "title": "Branded to Kill",
+        "release_year": 1967,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 20283,
+        "title": "Breaking Away",
+        "release_year": 1979,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10515,
+        "title": "Castle in the Sky",
+        "release_year": 1986,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 829,
+        "title": "Chinatown",
+        "release_year": 1974,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11104,
+        "title": "Chungking Express",
+        "release_year": 1994,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10323,
+        "title": "Clash of the Titans",
+        "release_year": 1981,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 840,
+        "title": "Close Encounters of the Third Kind",
+        "release_year": 1977,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 548473,
+        "title": "Color Out of Space",
+        "release_year": 2020,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 903,
+        "title": "Cool Hand Luke",
+        "release_year": 1967,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 923,
+        "title": "Dawn of the Dead",
+        "release_year": 1978,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11228,
+        "title": "Daylight",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 8408,
+        "title": "Day of the Dead",
+        "release_year": 1985,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 16804,
+        "title": "Departures",
+        "release_year": 2008,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9764,
+        "title": "Dersu Uzala",
+        "release_year": 1975,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 13025,
+        "title": "Diary of the Dead",
+        "release_year": 2007,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 968,
+        "title": "Dog Day Afternoon",
+        "release_year": 1975,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 683127,
+        "title": "Earwig and the Witch",
+        "release_year": 2021,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 590357,
+        "title": "Eating Up Easter",
+        "release_year": 2019,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1103,
+        "title": "Escape from New York",
+        "release_year": 1981,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 8413,
+        "title": "Event Horizon",
+        "release_year": 1997,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 109428,
+        "title": "Evil Dead",
+        "release_year": 2013,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 765,
+        "title": "Evil Dead II",
+        "release_year": 1987,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 713704,
+        "title": "Evil Dead Rise",
+        "release_year": 2023,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 911430,
+        "title": "F1",
+        "release_year": 2025,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 71138,
+        "title": "Female Prisoner #701: Scorpion",
+        "release_year": 1972,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 55379,
+        "title": "Female Prisoner Scorpion: #701's Grudge Song",
+        "release_year": 1973,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 35282,
+        "title": "Female Prisoner Scorpion: Beast Stable",
+        "release_year": 1973,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 39872,
+        "title": "Female Prisoner Scorpion: Jailhouse 41",
+        "release_year": 1972,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 15613,
+        "title": "Fire in the Sky",
+        "release_year": 1993,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 5910,
+        "title": "Fireworks",
+        "release_year": 1997,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 46918,
+        "title": "Floating Weeds",
+        "release_year": 1959,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 938,
+        "title": "For a Few Dollars More",
+        "release_year": 1965,
+        "watch_date": null,
+        "genre": "Western",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 83389,
+        "title": "From Up on Poppy Hill",
+        "release_year": 2011,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 4816,
+        "title": "Ghost Dog: The Way of the Samurai",
+        "release_year": 1999,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 96600,
+        "title": "Grassroots",
+        "release_year": 2012,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 502337,
+        "title": "Grizzly!",
+        "release_year": 1967,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 2019,
+        "title": "Hard Target",
+        "release_year": 1993,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11787,
+        "title": "Harvey",
+        "release_year": 1950,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 949,
+        "title": "Heat",
+        "release_year": 1995,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 12493,
+        "title": "High and Low",
+        "release_year": 1963,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 879,
+        "title": "Hook",
+        "release_year": 1991,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 6418,
+        "title": "Hotel Chevalier",
+        "release_year": 2007,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 25623,
+        "title": "House",
+        "release_year": 1977,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 4935,
+        "title": "Howl's Moving Castle",
+        "release_year": 2004,
+        "watch_date": null,
+        "genre": "Fantasy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 3782,
+        "title": "Ikiru",
+        "release_year": 1952,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 34774,
+        "title": "In Search of the Castaways",
+        "release_year": 1962,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 843,
+        "title": "In the Mood for Love",
+        "release_year": 2000,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 3059,
+        "title": "Intolerance: Love's Struggle Throughout the Ages",
+        "release_year": 1916,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11533,
+        "title": "Jason and the Argonauts",
+        "release_year": 1963,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11571,
+        "title": "Journey to the Center of the Earth",
+        "release_year": 1959,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 331,
+        "title": "Jurassic Park III",
+        "release_year": 2001,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 135397,
+        "title": "Jurassic World",
+        "release_year": 2015,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 507086,
+        "title": "Jurassic World Dominion",
+        "release_year": 2022,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 351286,
+        "title": "Jurassic World: Fallen Kingdom",
+        "release_year": 2018,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 16859,
+        "title": "Kiki's Delivery Service",
+        "release_year": 1989,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 4291,
+        "title": "Kikujiro",
+        "release_year": 1999,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 244,
+        "title": "King Kong",
+        "release_year": 1933,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11683,
+        "title": "Land of the Dead",
+        "release_year": 2005,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 20530,
+        "title": "Late Spring",
+        "release_year": 1949,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 947,
+        "title": "Lawrence of Arabia",
+        "release_year": 1962,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 5511,
+        "title": "Le Samoura\u00ef",
+        "release_year": 1967,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 17810,
+        "title": "Lone Wolf and Cub: Baby Cart at the River Styx",
+        "release_year": 1972,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 41477,
+        "title": "Lone Wolf and Cub: Baby Cart in Peril",
+        "release_year": 1972,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 41482,
+        "title": "Lone Wolf and Cub: Baby Cart in the Land of Demons",
+        "release_year": 1973,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 41474,
+        "title": "Lone Wolf and Cub: Baby Cart to Hades",
+        "release_year": 1972,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 41471,
+        "title": "Lone Wolf and Cub: Sword of Vengeance",
+        "release_year": 1972,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 41486,
+        "title": "Lone Wolf and Cub: White Heaven in Hell",
+        "release_year": 1974,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 72693,
+        "title": "Master of the World",
+        "release_year": 1961,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 33320,
+        "title": "Millennium Actress",
+        "release_year": 2002,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 110283,
+        "title": "Minbo, or The Gentle Art of Japanese Extortion",
+        "release_year": 1992,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 83666,
+        "title": "Moonrise Kingdom",
+        "release_year": 2012,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10874,
+        "title": "Muppet Treasure Island",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Family",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 3088,
+        "title": "My Darling Clementine",
+        "release_year": 1946,
+        "watch_date": null,
+        "genre": "Western",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 16198,
+        "title": "My Neighbors the Yamadas",
+        "release_year": 1999,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 8392,
+        "title": "My Neighbor Totoro",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Fantasy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 81,
+        "title": "Nausica\u00e4 of the Valley of the Wind",
+        "release_year": 1984,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 27418,
+        "title": "Next of Kin",
+        "release_year": 1989,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10331,
+        "title": "Night of the Living Dead",
+        "release_year": 1968,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 21057,
+        "title": "Ocean Waves",
+        "release_year": 1993,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 15080,
+        "title": "Only Yesterday",
+        "release_year": 1991,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11293,
+        "title": "Paper Moon",
+        "release_year": 1973,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 4977,
+        "title": "Paprika",
+        "release_year": 2006,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10494,
+        "title": "Perfect Blue",
+        "release_year": 1998,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 120672,
+        "title": "Peter Pan",
+        "release_year": 1924,
+        "watch_date": null,
+        "genre": "Family",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 15283,
+        "title": "Pom Poko",
+        "release_year": 1994,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 12429,
+        "title": "Ponyo",
+        "release_year": 2008,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11621,
+        "title": "Porco Rosso",
+        "release_year": 1992,
+        "watch_date": null,
+        "genre": "Family",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 128,
+        "title": "Princess Mononoke",
+        "release_year": 1997,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 548,
+        "title": "Rashomon",
+        "release_year": 1950,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 23169,
+        "title": "Remember Me",
+        "release_year": 2010,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9326,
+        "title": "Romancing the Stone",
+        "release_year": 1984,
+        "watch_date": null,
+        "genre": "Romance",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 805,
+        "title": "Rosemary's Baby",
+        "release_year": 1968,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11712,
+        "title": "Sanjuro",
+        "release_year": 1962,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 346,
+        "title": "Seven Samurai",
+        "release_year": 1954,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 2605,
+        "title": "Short Circuit",
+        "release_year": 1986,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11590,
+        "title": "Slap Shot",
+        "release_year": 1977,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11561,
+        "title": "Sleeper",
+        "release_year": 1973,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 819,
+        "title": "Sleepers",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 7500,
+        "title": "Sonatine",
+        "release_year": 1993,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 12236,
+        "title": "Speed Zone",
+        "release_year": 1989,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 129,
+        "title": "Spirited Away",
+        "release_year": 2001,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11601,
+        "title": "Stir of Echoes",
+        "release_year": 1999,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 81296,
+        "title": "Supermarket Woman",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 29426,
+        "title": "Survival of the Dead",
+        "release_year": 2010,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 37933,
+        "title": "Tales from Earthsea",
+        "release_year": 2006,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11830,
+        "title": "Tampopo",
+        "release_year": 1985,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 15515,
+        "title": "The 7th Voyage of Sinbad",
+        "release_year": 1958,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9448,
+        "title": "The Big Hit",
+        "release_year": 1998,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 826,
+        "title": "The Bridge on the River Kwai",
+        "release_year": 1957,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 15370,
+        "title": "The Cat Returns",
+        "release_year": 2002,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 4538,
+        "title": "The Darjeeling Limited",
+        "release_year": 2007,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 59314,
+        "title": "The Day After Trinity",
+        "release_year": 1981,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 764,
+        "title": "The Evil Dead",
+        "release_year": 1981,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 12310,
+        "title": "The Four Musketeers",
+        "release_year": 1974,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 22824,
+        "title": "The Fourth Kind",
+        "release_year": 2009,
+        "watch_date": null,
+        "genre": "Mystery",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 542178,
+        "title": "The French Dispatch of the Liberty, Kansas Evening Sun",
+        "release_year": 2021,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10136,
+        "title": "The Golden Child",
+        "release_year": 1986,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 962,
+        "title": "The Gold Rush",
+        "release_year": 1925,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 429,
+        "title": "The Good, the Bad and the Ugly",
+        "release_year": 1966,
+        "watch_date": null,
+        "genre": "Western",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 120467,
+        "title": "The Grand Budapest Hotel",
+        "release_year": 2014,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1059,
+        "title": "The Hidden Fortress",
+        "release_year": 1958,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 27085,
+        "title": "The Land That Time Forgot",
+        "release_year": 1974,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 83205,
+        "title": "The Last Dance",
+        "release_year": 1993,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1547,
+        "title": "The Lost Boys",
+        "release_year": 1987,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 330,
+        "title": "The Lost World: Jurassic Park",
+        "release_year": 1997,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 593643,
+        "title": "The Menu",
+        "release_year": 2022,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1994,
+        "title": "The Most Dangerous Game",
+        "release_year": 1932,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 337703,
+        "title": "The Red Turtle",
+        "release_year": 2016,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9428,
+        "title": "The Royal Tenenbaums",
+        "release_year": 2001,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 51739,
+        "title": "The Secret World of Arrietty",
+        "release_year": 2010,
+        "watch_date": null,
+        "genre": "Fantasy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 92332,
+        "title": "The Spiders: Part 2 - The Diamond Ship",
+        "release_year": 1920,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 91893,
+        "title": "The Spiders: Part 1 - The Golden Sea",
+        "release_year": 1919,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 141897,
+        "title": "The Story of Yanagawa's Canals",
+        "release_year": 1987,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 149871,
+        "title": "The Tale of The Princess Kaguya",
+        "release_year": 2013,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1091,
+        "title": "The Thing",
+        "release_year": 1982,
+        "watch_date": null,
+        "genre": "Horror",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 2926,
+        "title": "The Three Musketeers",
+        "release_year": 1973,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 2134,
+        "title": "The Time Machine",
+        "release_year": 1960,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 23805,
+        "title": "The Toy",
+        "release_year": 1982,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 42329,
+        "title": "The Valley of Gwangi",
+        "release_year": 1969,
+        "watch_date": null,
+        "genre": "Fantasy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 378018,
+        "title": "The Void",
+        "release_year": 2016,
+        "watch_date": null,
+        "genre": "Mystery",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 576,
+        "title": "The Wild Bunch",
+        "release_year": 1969,
+        "watch_date": null,
+        "genre": "Western",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 149870,
+        "title": "The Wind Rises",
+        "release_year": 2013,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 8337,
+        "title": "They Live",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Science Fiction",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 45706,
+        "title": "Tokyo Drifter",
+        "release_year": 1966,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 18148,
+        "title": "Tokyo Story",
+        "release_year": 1953,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 627,
+        "title": "Trainspotting",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 26612,
+        "title": "Treasure Island",
+        "release_year": 1990,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 97762,
+        "title": "Two Years at Sea",
+        "release_year": 2012,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9349,
+        "title": "Universal Soldier",
+        "release_year": 1992,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 860,
+        "title": "WarGames",
+        "release_year": 1983,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 30117,
+        "title": "Warlords of Atlantis",
+        "release_year": 1978,
+        "watch_date": null,
+        "genre": "Adventure",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 242828,
+        "title": "When Marnie Was There",
+        "release_year": 2014,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 37797,
+        "title": "Whisper of the Heart",
+        "release_year": 1995,
+        "watch_date": null,
+        "genre": "Animation",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 164207,
+        "title": "Woman in Witness Protection",
+        "release_year": 1997,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11878,
+        "title": "Yojimbo",
+        "release_year": 1961,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
     }
 ]
