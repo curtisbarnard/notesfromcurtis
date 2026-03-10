@@ -1,5 +1,23 @@
 [
     {
+        "id": 746,
+        "title": "The Last Emperor",
+        "release_year": 1987,
+        "watch_date": "2026-03-09",
+        "genre": "Drama",
+        "rating": 4,
+        "notes": "I wish it wasn't shot in English as it took away from the immersion, but good overall. A classic three act structure."
+    },
+    {
+        "id": 9344,
+        "title": "Kids",
+        "release_year": 1995,
+        "watch_date": "2026-02-26",
+        "genre": "Drama",
+        "rating": 4,
+        "notes": "Uncomfortable, but it seems like it set out to do that by 'documenting' kids growing up on the streets in the 90's"
+    },
+    {
         "id": 329,
         "title": "Jurassic Park",
         "release_year": 1993,
@@ -25,6 +43,69 @@
         "genre": "Drama",
         "rating": 5,
         "notes": "One of my top three movies of all time. I remember on one of trips to Japan watching it with Tram and both of use just crying in the hotel room."
+    },
+    {
+        "id": 17365,
+        "title": "The Parallax View",
+        "release_year": 1974,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11963,
+        "title": "Three Days of the Condor",
+        "release_year": 1975,
+        "watch_date": null,
+        "genre": "Thriller",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 7326,
+        "title": "Juno",
+        "release_year": 2007,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 3009,
+        "title": "The Trial",
+        "release_year": 1962,
+        "watch_date": null,
+        "genre": "Crime",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1903,
+        "title": "Vanilla Sky",
+        "release_year": 2001,
+        "watch_date": null,
+        "genre": "Mystery",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 562,
+        "title": "Die Hard",
+        "release_year": 1988,
+        "watch_date": null,
+        "genre": "Action",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 86814,
+        "title": "News from Home",
+        "release_year": 1977,
+        "watch_date": null,
+        "genre": "Documentary",
+        "rating": null,
+        "notes": ""
     },
     {
         "id": 7520,
