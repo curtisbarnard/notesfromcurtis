@@ -750,19 +750,19 @@
         "id": 391,
         "title": "A Fistful of Dollars",
         "release_year": 1964,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Western",
-        "rating": null,
-        "notes": ""
+        "rating": 5,
+        "notes": "The first of the Dollar trilogy and I think my favorite. The pacing is good."
     },
     {
         "id": 149,
         "title": "Akira",
         "release_year": 1988,
-        "watch_date": null,
+        "watch_date": "2025-01-01",
         "genre": "Animation",
-        "rating": null,
-        "notes": ""
+        "rating": 4,
+        "notes": "Dark and gotham like with questions remaining at the end."
     },
     {
         "id": 13199,
@@ -786,10 +786,10 @@
         "id": 300668,
         "title": "Annihilation",
         "release_year": 2018,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Science Fiction",
-        "rating": null,
-        "notes": ""
+        "rating": 4,
+        "notes": "I enjoyed the mystery and visuals. It was nothing like I was expecting."
     },
     {
         "id": 81860,
@@ -885,19 +885,19 @@
         "id": 3176,
         "title": "Battle Royale",
         "release_year": 2000,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Drama",
-        "rating": null,
-        "notes": ""
+        "rating": 5,
+        "notes": "Before Hunger Games and Squid Game there was Battle Royale. One of the first Japanese movies I remember seeing as a teenager. Gruesome, toilsome, campy and excellent."
     },
     {
         "id": 6978,
         "title": "Big Trouble in Little China",
         "release_year": 1986,
-        "watch_date": null,
+        "watch_date": "2025-01-01",
         "genre": "Action",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "So cheezy and of it's time. I had no problem getting thru it, but will be fine to never watch it again."
     },
     {
         "id": 1052,
@@ -921,10 +921,10 @@
         "id": 13685,
         "title": "Bottle Rocket",
         "release_year": 1996,
-        "watch_date": null,
+        "watch_date": "2026-01-01",
         "genre": "Comedy",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "Not my favorite Wes Anderson movie. Nice to see young versions of the Wilson brothers."
     },
     {
         "id": 17905,
@@ -948,10 +948,10 @@
         "id": 10515,
         "title": "Castle in the Sky",
         "release_year": 1986,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Adventure",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "Falls squarely in the Miyazaki warehouse, but it just didn't have as much an impact on me."
     },
     {
         "id": 829,
@@ -966,10 +966,10 @@
         "id": 11104,
         "title": "Chungking Express",
         "release_year": 1994,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Drama",
-        "rating": null,
-        "notes": ""
+        "rating": 4,
+        "notes": "A transportative Wong Kar Wai movie. Struggles with love amongst the day to day life in Hong Kong. Beautiful visuals."
     },
     {
         "id": 10323,
@@ -1002,19 +1002,19 @@
         "id": 903,
         "title": "Cool Hand Luke",
         "release_year": 1967,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Drama",
-        "rating": null,
-        "notes": ""
+        "rating": 4,
+        "notes": "Paul Newman cool as hell as a bull headed prisoner."
     },
     {
         "id": 923,
         "title": "Dawn of the Dead",
         "release_year": 1978,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Horror",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "The origin of the modern zombie."
     },
     {
         "id": 11228,
@@ -1074,28 +1074,28 @@
         "id": 683127,
         "title": "Earwig and the Witch",
         "release_year": 2021,
-        "watch_date": null,
+        "watch_date": "2025-01-01",
         "genre": "Animation",
-        "rating": null,
-        "notes": ""
+        "rating": 2,
+        "notes": "Ghibli does 3D animation and it doesn't work for me"
     },
     {
         "id": 590357,
         "title": "Eating Up Easter",
         "release_year": 2019,
-        "watch_date": null,
+        "watch_date": "2026-3-13",
         "genre": "Documentary",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "Nice to see a documentary produced by a native Rapa Nui rather than another episode of Ancient Aliens. Leaves you more depressed than hopeful."
     },
     {
         "id": 1103,
         "title": "Escape from New York",
         "release_year": 1981,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Science Fiction",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "A nice gritty dystopian future. Quick pacing and simple plot that moves right along."
     },
     {
         "id": 8413,
@@ -1119,10 +1119,10 @@
         "id": 765,
         "title": "Evil Dead II",
         "release_year": 1987,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Horror",
-        "rating": null,
-        "notes": ""
+        "rating": 2,
+        "notes": "The first one was shocking, but this one just fell flat."
     },
     {
         "id": 713704,
@@ -1137,10 +1137,10 @@
         "id": 911430,
         "title": "F1",
         "release_year": 2025,
-        "watch_date": null,
+        "watch_date": "2026-01-01",
         "genre": "Action",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "Some interesting shots, but a lame story line. I'm also an F1 fan so can't help seeing the inaccuracies."
     },
     {
         "id": 71138,
@@ -1209,10 +1209,10 @@
         "id": 938,
         "title": "For a Few Dollars More",
         "release_year": 1965,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Western",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "The pacing was a bit slower and I lost interest a few times."
     },
     {
         "id": 83389,
@@ -1719,15 +1719,6 @@
         "notes": ""
     },
     {
-        "id": 548,
-        "title": "Rashomon",
-        "release_year": 1950,
-        "watch_date": null,
-        "genre": "Crime",
-        "rating": null,
-        "notes": ""
-    },
-    {
         "id": 23169,
         "title": "Remember Me",
         "release_year": 2010,
@@ -1769,15 +1760,6 @@
         "release_year": 1954,
         "watch_date": null,
         "genre": "Action",
-        "rating": null,
-        "notes": ""
-    },
-    {
-        "id": 2605,
-        "title": "Short Circuit",
-        "release_year": 1986,
-        "watch_date": null,
-        "genre": "Science Fiction",
         "rating": null,
         "notes": ""
     },
@@ -1938,10 +1920,10 @@
         "id": 764,
         "title": "The Evil Dead",
         "release_year": 1981,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Horror",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "Campy, group of friends in a cabin in the woods."
     },
     {
         "id": 12310,
@@ -1992,10 +1974,10 @@
         "id": 429,
         "title": "The Good, the Bad and the Ugly",
         "release_year": 1966,
-        "watch_date": null,
+        "watch_date": "1970-01-01",
         "genre": "Western",
-        "rating": null,
-        "notes": ""
+        "rating": 4,
+        "notes": "Great music, pacing was good, but a very long movie."
     },
     {
         "id": 120467,
@@ -2210,15 +2192,6 @@
         "release_year": 1988,
         "watch_date": null,
         "genre": "Science Fiction",
-        "rating": null,
-        "notes": ""
-    },
-    {
-        "id": 45706,
-        "title": "Tokyo Drifter",
-        "release_year": 1966,
-        "watch_date": null,
-        "genre": "Thriller",
         "rating": null,
         "notes": ""
     },
