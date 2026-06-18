@@ -327,10 +327,10 @@
         "id": 90,
         "title": "Beverly Hills Cop",
         "release_year": "1984",
-        "watch_date": null,
+        "watch_date": "2026-03-19",
         "genre": "Comedy",
-        "rating": null,
-        "notes": null
+        "rating": 4,
+        "notes": "Feels like a standard Eddie Murphy movie that uses only a single 80's song motif throughout the whole movie."
     },
     {
         "id": 2300,
@@ -831,10 +831,10 @@
         "id": 13667,
         "title": "Better Off Dead...",
         "release_year": "1985",
-        "watch_date": null,
+        "watch_date": "2026-05-08",
         "genre": "Comedy",
-        "rating": null,
-        "notes": null
+        "rating": 2,
+        "notes": "Full of 80's tropes, but a few good laughs throughout."
     },
     {
         "id": 352379,
@@ -2437,5 +2437,14 @@
         "genre": "Drama",
         "rating": null,
         "notes": ""
+    },
+    {
+        "id": 79382,
+        "title": "I Wish (奇跡)",
+        "release_year": 2011,
+        "watch_date": "2026-03-22",
+        "genre": "Drama",
+        "rating": 4,
+        "notes": "A slow paced kids adventure. I like the nostalgic 'natsukashii' feeling of it. It doesn't move too fast or too slow."
     }
 ]
