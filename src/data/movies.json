@@ -2446,5 +2446,158 @@
         "genre": "Drama",
         "rating": 4,
         "notes": "A slow paced kids adventure. I like the nostalgic 'natsukashii' feeling of it. It doesn't move too fast or too slow."
+    },
+    {
+        "id": 434775,
+        "title": "The Third Murder",
+        "release_year": 2017,
+        "watch_date": "2026-06-21",
+        "genre": "Drama",
+        "rating": 2,
+        "notes": "A little to translucent from the start. Seemed like the movie was trying to be too clever."
+    },
+    {
+        "id": 1084244,
+        "title": "Toy Story 5",
+        "release_year": 2026,
+        "watch_date": "2026-06-20",
+        "genre": "Animation",
+        "rating": 4,
+        "notes": "Went toa rented out movie theater for a friends birthday party and it was Norris's first time at a movie theater. He did great, as did the other kids. All the familiar cast members and they take on the modern day evil of social media. Apropos for our current time and a good lesson for kids. "
+    },
+    {
+        "id": 23282,
+        "title": "One Week",
+        "release_year": 1920,
+        "watch_date": "2026-03-28",
+        "genre": "Comedy",
+        "rating": 3,
+        "notes": "There are some great, and risky, stunts. Overall a nice simple short film."
+    },
+    {
+        "id": 4886,
+        "title": "And Then There Were None",
+        "release_year": 1945,
+        "watch_date": "2026-03-30",
+        "genre": "Crime",
+        "rating": 3,
+        "notes": "A fun mystery, bordering on thriller."
+    },
+    {
+        "id": 18872,
+        "title": "Maborosi (幻の光)",
+        "release_year": 1995,
+        "watch_date": "2026-04-04",
+        "genre": "Drama",
+        "rating": 3,
+        "notes": "Sad, confusing and lots of room to breath in the long cuts"
+    },
+    {
+        "id": 335,
+        "title": "Once Upon a Time in the West",
+        "release_year": 1968,
+        "watch_date": "2026-04-12",
+        "genre": "Western",
+        "rating": 4,
+        "notes": "Some great long single takes and good music. A classic from Sergio Leone."
+    },
+    {
+        "id": 313369,
+        "title": "La La Land",
+        "release_year": 2016,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 546554,
+        "title": "Knives Out",
+        "release_year": 2019,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 16642,
+        "title": "Days of Heaven",
+        "release_year": 1978,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 8741,
+        "title": "The Thin Red Line",
+        "release_year": 1998,
+        "watch_date": null,
+        "genre": "War",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 10406,
+        "title": "Encino Man",
+        "release_year": 1992,
+        "watch_date": null,
+        "genre": "Comedy",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 1317288,
+        "title": "Marty Supreme",
+        "release_year": 2025,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 964960,
+        "title": "The Taste of Things",
+        "release_year": 2023,
+        "watch_date": null,
+        "genre": "Romance",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 9960,
+        "title": "Lord of the Flies",
+        "release_year": 1963,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 11832,
+        "title": "Babette's Feast",
+        "release_year": 1987,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 18203,
+        "title": "Big Night",
+        "release_year": 1996,
+        "watch_date": null,
+        "genre": "Drama",
+        "rating": null,
+        "notes": ""
+    },
+    {
+        "id": 28,
+        "title": "Apocalypse Now",
+        "release_year": 1979,
+        "watch_date": null,
+        "genre": "War",
+        "rating": null,
+        "notes": "Watch the extended cut"
     }
 ]
