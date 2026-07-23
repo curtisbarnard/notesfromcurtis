@@ -1,0 +1,46 @@
+[
+  {
+        "title": "Setting the Table: The Transforming Power of Hospitality in Business",
+        "author": "Danny Meyer",
+        "ISBN13": 9780060742768,
+        "publish_year": 2006,
+        "read_date": "2026-05-06",
+        "type": "nonfiction",
+        "genres": ["business", "food"],
+        "rating": 5,
+        "notes": "There is a decent amount of corporate speak and I'm not sure how well he treats his people, but the fundamentals are inspiring. The dots being connected from his life experience to open the restaurants are nice. The little peak behind the curtain of what it takes to open a place is nice. I wish there were more books like this. It reminds me of shiba ramen and the ramen chemistry (https://www.ramenchemistry.com/) blog I read years back."
+  },
+  {
+        "title": "Sushi Chef: Sukiyabashi Jiro",
+        "author": "Shinzō Satomi",
+        "ISBN13": 9781942993278,
+        "publish_year": 2016,
+        "read_date": "2026-04-13",
+        "type": "nonfiction",
+        "genres": ["food", "japan"],
+        "rating": 4,
+        "notes": "Some good non scientific ramblings on sushi ingredients and methods along with some great instructional photographs. While I'm not a big fan of nigiri it was still a pleasant read."
+  },
+  {
+        "title": "Mukoita I, Cutting Techniques: Fish",
+        "author": "Japanese Culinary Academy",
+        "ISBN13": 9784908325069,
+        "publish_year": 2017,
+        "read_date": "2026-03-01",
+        "type": "nonfiction",
+        "genres": ["food", "cookbook", "japan"],
+        "rating": 5,
+        "notes": "In typical Japanese fashion an excellent book that shows step by step photographically how to break down various types of fish. I've been wanting to try breaking down some fish and this is a great reference. While many species might not be available locally you can probably compare a local species and it's anatomy to find the best way to break it down for yield and quality. Now I just need to find some top quality whole fish."
+  },
+  {
+        "title": "Burn the Ice: The American Culinary Revolution and Its End",
+        "author": "Kevin Alexander",
+        "ISBN13": 9780525558026,
+        "publish_year": 2019,
+        "read_date": "2026-06-10",
+        "type": "nonfiction",
+        "genres": ["food"],
+        "rating": 5,
+        "notes": "It follows various chefs/entrepreneurs from the mid aughts until just before COVID and how the restaurant scene in America transformed. It starts out with Gabriel Rucker in Portland and paints a very nostalgic picture of what it was like in Portland during that time. It was before I really got in to food as I was still in high school, but there are recognizable names and places. It makes me miss what Portland was and cherish any new places that capture that early scrappy spirit."
+  },
+]
