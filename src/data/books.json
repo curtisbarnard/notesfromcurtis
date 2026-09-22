@@ -1,5 +1,113 @@
 [
   {
+    "title": "Rintaro",
+    "author": "Sylvan Mishima Brackett"
+    "read_date": "2025-07-23",
+    "rating": "3",
+  },
+  {
+    "title": "Yardbird",
+    "author": "Matt Abergel"
+    "read_date": "2025-07-23",
+    "rating": "4",
+  },
+  {
+    "title": "Crying in H Mart",
+    "author": "Michelle Zauner"
+    "read_date": "2025-07-23",
+    "rating": "3",
+  },
+  {
+    "title": "Short Stories in Japanese for Intermediate Learners",
+    "author": "Olly Richards"
+    "read_date": "2025-05-16",
+    "rating": "3",
+  },
+  {
+    "title": "Pachinko",
+    "author": "Min Jin Lee"
+    "read_date": "2024-05-30",
+    "rating": "4",
+  },
+  {
+    "title": "A Personal Matter",
+    "author": "Kenzaburo Oe"
+    "read_date": "2024-02-17",
+    "rating": "2",
+  },
+  {
+    "title": "Beachbum Berry's Potions Of The Caribbean : 500 Years Of Tropical Drinks And The People Behind Them",
+    "author": "Jeff Berry"
+    "read_date": "2023-10-26",
+    "rating": "4",
+  },
+  {
+    "title": "The Sailor Who Fell From Grace With the Sea",
+    "author": "Yukio Mishima"
+    "read_date": "2023-06-30",
+    "rating": "4",
+  },
+  {
+    "title": "Catfish and Mandala",
+    "author": "Andrew X. Pham"
+    "read_date": "2023-06-30",
+    "rating": "4",
+  },
+  {
+    "title": "Engineering Eden",
+    "author": "Jordan Fisher Smith"
+    "read_date": "2023-03-14",
+    "rating": "4",
+  },
+  {
+    "title": "Building A Second Brain",
+    "author": "Tiago Forte"
+    "read_date": "2023-01-16",
+    "rating": "4",
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas"
+    "read_date": "2022-11-17",
+    "rating": "4",
+  },
+  {
+    "title": "Fire Lookouts of Oregon",
+    "author": "Cheryl Hill"
+    "read_date": "2022-06-20",
+    "rating": "4",
+  },
+  {
+    "title": "Grokking Algorithms",
+    "author": "Aditya Y. Bhargava"
+    "read_date": "2022-06-20",
+    "rating": "4",
+  },
+  {
+    "title": "Yellowstone: A Wilderness Besieged",
+    "author": "Richard A. Bartlett"
+    "read_date": "2022-02-05",
+    "rating": "4",
+  },
+  {
+    "title": "Three Sisters Wilderness: A History",
+    "author": "Les Joslin"
+    "read_date": "2022-02-05",
+    "rating": "3",
+  },
+  {
+    "title": "Grid Systems in Graphic Design",
+    "author": "Josef Müller-Brockmann"
+    "read_date": "2022-01-09",
+    "rating": "4",
+  },
+  {
+    "title": "Before Yellowstone",
+    "author": "Douglas H. MacDonald"
+    "read_date": "2022-01-09",
+    "rating": "4",
+  },
+  {
         "title": "Setting the Table: The Transforming Power of Hospitality in Business",
         "author": "Danny Meyer",
         "ISBN13": 9780060742768,
