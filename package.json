@@ -8,6 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "books:missing": "node scripts/list-books-missing-metadata.mjs",
+    "books:sort-frontmatter": "node scripts/sort-book-frontmatter.mjs",
     "astro": "astro"
   },
   "dependencies": {
