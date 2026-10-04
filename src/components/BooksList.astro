@@ -1,0 +1,257 @@
+---
+import { getCollection } from 'astro:content';
+
+const books = await getCollection('books');
+const sortedBooks = [...books].sort((left, right) => {
+  const leftDate = left.data.readDate ?? '';
+  const rightDate = right.data.readDate ?? '';
+  return rightDate.localeCompare(leftDate) || left.data.title.localeCompare(right.data.title);
+});
+const authors = [...new Set(books.map((book) => book.data.author).filter((author): author is string => Boolean(author)))].sort((a, b) => a.localeCompare(b));
+const ratings = [...new Set(books.map((book) => book.data.rating).filter((rating) => rating !== undefined))].sort((a, b) => a - b);
+const types = [...new Set(books.map((book) => book.data.type).filter((type): type is string => Boolean(type)))].sort((a, b) => a.localeCompare(b));
+const genres = [...new Set(books.flatMap((book) => book.data.genres ?? []))].sort((a, b) => a.localeCompare(b));
+---
+
+<section class="book-browser" aria-label="Book collection">
+  <div class="controls">
+    <label>
+      <span>Sort by</span>
+      <select id="book-sort">
+        <option value="readDate" selected>Read date</option>
+        <option value="rating">Rating</option>
+        <option value="publishYear">Publication year</option>
+        <option value="author">Author</option>
+      </select>
+    </label>
+    <button class="direction" id="sort-direction" type="button" aria-label="Reverse sort direction" aria-pressed="true">
+      Newest first
+    </button>
+    <label>
+      <span>Rating</span>
+      <select id="filter-rating">
+        <option value="">All ratings</option>
+        {ratings.map((rating) => <option value={rating}>{rating} / 5</option>)}
+      </select>
+    </label>
+    <label>
+      <span>Author</span>
+      <select id="filter-author">
+        <option value="">All authors</option>
+        {authors.map((author) => <option value={author}>{author}</option>)}
+      </select>
+    </label>
+    <label>
+      <span>Type</span>
+      <select id="filter-type">
+        <option value="">All types</option>
+        {types.map((type) => <option value={type}>{type}</option>)}
+      </select>
+    </label>
+    <label>
+      <span>Genre</span>
+      <select id="filter-genre">
+        <option value="">All genres</option>
+        {genres.map((genre) => <option value={genre}>{genre}</option>)}
+      </select>
+    </label>
+  </div>
+
+  <p class="result-count" id="book-result-count" aria-live="polite">Showing {books.length} books</p>
+  <div class="book-grid" id="book-grid">
+    {sortedBooks.map((book) => (
+      <article
+        class="book-card"
+        data-title={book.data.title}
+        data-author={book.data.author ?? ''}
+        data-rating={book.data.rating ?? ''}
+        data-read-date={book.data.readDate ?? ''}
+        data-publish-year={book.data.publishYear ?? ''}
+        data-type={book.data.type ?? ''}
+        data-genres={(book.data.genres ?? []).join('|')}
+      >
+        <h2><a href={`/books/${book.id}/`}>{book.data.title}</a></h2>
+        {book.data.author && <p class="author">{book.data.author}</p>}
+        <p class="book-meta">
+          {book.data.rating !== undefined && <span>{book.data.rating} / 5</span>}
+          {book.data.readDate && <time datetime={book.data.readDate}>Read {book.data.readDate}</time>}
+          {book.data.publishYear && <span>Published {book.data.publishYear}</span>}
+        </p>
+        {book.data.genres?.length && <p class="genres">{book.data.genres.join(' · ')}</p>}
+      </article>
+    ))}
+  </div>
+  <p class="empty-state" id="book-empty-state" hidden>No books match these filters.</p>
+</section>
+
+<style>
+  .book-browser {
+    margin-top: 1.75rem;
+  }
+
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: end;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    border-top: 1px solid hsl(31, 20%, 78%);
+    border-bottom: 1px solid hsl(31, 20%, 78%);
+  }
+
+  label {
+    display: grid;
+    gap: 0.25rem;
+    min-width: 0;
+    font-size: 0.85rem;
+  }
+
+  label span {
+    font-weight: 700;
+  }
+
+  select,
+  .direction {
+    width: 100%;
+    min-height: 2.65rem;
+    padding: 0.4rem 0.55rem;
+    border: 1px solid hsl(31, 20%, 65%);
+    border-radius: 3px;
+    background: hsl(31, 90%, 98%);
+    color: inherit;
+    font: inherit;
+  }
+
+  .direction {
+    cursor: pointer;
+  }
+
+  .direction:hover,
+  select:focus-visible,
+  .direction:focus-visible {
+    outline: 2px solid hsl(18, 70%, 42%);
+    outline-offset: 2px;
+  }
+
+  .result-count {
+    margin: 0.85rem 0;
+    font-size: 0.9rem;
+  }
+
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+    gap: 0.75rem;
+  }
+
+  .book-card {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid hsl(31, 20%, 82%);
+    border-radius: 4px;
+    background: hsl(31, 90%, 99%);
+  }
+
+  .book-card h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .book-card h2 a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+  }
+
+  .book-card h2 a:hover {
+    color: hsl(18, 70%, 42%);
+  }
+
+  .author {
+    margin: 0.35rem 0;
+  }
+
+  .book-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.85rem;
+    margin: 0.65rem 0 0;
+    font-size: 0.85rem;
+  }
+
+  .genres {
+    margin: 0.55rem 0 0;
+    color: hsl(31, 15%, 38%);
+    font-size: 0.8rem;
+  }
+
+  .empty-state {
+    padding: 1.5rem 0;
+  }
+
+  @media (max-width: 680px) {
+    .controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 380px) {
+    .controls {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>
+
+<script>
+  const grid = document.querySelector<HTMLDivElement>('#book-grid');
+  const cards = [...(grid?.querySelectorAll<HTMLElement>('.book-card') ?? [])];
+  const sortSelect = document.querySelector<HTMLSelectElement>('#book-sort');
+  const directionButton = document.querySelector<HTMLButtonElement>('#sort-direction');
+  const resultCount = document.querySelector<HTMLParagraphElement>('#book-result-count');
+  const emptyState = document.querySelector<HTMLParagraphElement>('#book-empty-state');
+  const filterIds = ['rating', 'author', 'type', 'genre'] as const;
+  let descending = true;
+
+  function updateBooks() {
+    if (!grid || !sortSelect || !directionButton || !resultCount || !emptyState) return;
+    const filters = Object.fromEntries(filterIds.map((name) => [name, document.querySelector<HTMLSelectElement>(`#filter-${name}`)?.value ?? ''])) as Record<(typeof filterIds)[number], string>;
+    const visible = cards.filter((card) => {
+      const matchesRating = !filters.rating || card.dataset.rating === filters.rating;
+      const matchesAuthor = !filters.author || card.dataset.author === filters.author;
+      const matchesType = !filters.type || card.dataset.type === filters.type;
+      const matchesGenre = !filters.genre || (card.dataset.genres ?? '').split('|').includes(filters.genre);
+      return matchesRating && matchesAuthor && matchesType && matchesGenre;
+    });
+    const key = sortSelect.value;
+    visible.sort((left, right) => {
+      const leftValue = left.dataset[key] ?? '';
+      const rightValue = right.dataset[key] ?? '';
+      if (!leftValue && rightValue) return 1;
+      if (leftValue && !rightValue) return -1;
+      const comparison = key === 'rating' || key === 'publishYear'
+        ? Number(leftValue) - Number(rightValue)
+        : leftValue.localeCompare(rightValue, undefined, { sensitivity: 'base' });
+      return (descending ? -comparison : comparison)
+        || (left.dataset.title ?? '').localeCompare(right.dataset.title ?? '', undefined, { sensitivity: 'base' });
+    });
+    for (const card of cards) card.hidden = !visible.includes(card);
+    for (const card of visible) grid.append(card);
+    directionButton.textContent = key === 'readDate' || key === 'publishYear'
+      ? descending ? 'Newest first' : 'Oldest first'
+      : key === 'rating'
+        ? descending ? 'Highest first' : 'Lowest first'
+        : descending ? 'Z to A' : 'A to Z';
+    directionButton.setAttribute('aria-pressed', String(descending));
+    resultCount.textContent = `Showing ${visible.length} of ${cards.length} books`;
+    emptyState.hidden = visible.length > 0;
+  }
+
+  document.querySelectorAll('#book-sort, #filter-rating, #filter-author, #filter-type, #filter-genre')
+    .forEach((control) => control.addEventListener('change', updateBooks));
+  directionButton?.addEventListener('click', () => {
+    descending = !descending;
+    updateBooks();
+  });
+  updateBooks();
+</script>

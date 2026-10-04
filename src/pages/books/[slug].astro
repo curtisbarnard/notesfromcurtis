@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+  return books.map((book) => ({ params: { slug: book.id }, props: { book } }));
+}
+
+const { book } = Astro.props;
+const { Content } = await render(book);
+const { data } = book;
+---
+
+<Layout title={`${data.title} — Notes from Curtis...`}>
+  <article>
+    <header>
+      <h1>{data.title}</h1>
+      {data.author && <p class="author">{data.author}</p>}
+      <dl class="metadata">
+        {data.rating !== undefined && <div><dt>Rating</dt><dd>{data.rating} / 5</dd></div>}
+        {data.readDate && <div><dt>Read</dt><dd>{data.readDate}</dd></div>}
+        {data.publishYear && <div><dt>Published</dt><dd>{data.publishYear}</dd></div>}
+        {data.type && <div><dt>Type</dt><dd>{data.type}</dd></div>}
+        {data.genres?.length && <div><dt>Genres</dt><dd>{data.genres.join(', ')}</dd></div>}
+      </dl>
+      {(data.reviewPublishedAt || data.reviewEditedAt) && (
+        <p class="review-history">
+          {data.reviewPublishedAt && <>Originally reviewed {data.reviewPublishedAt}</>}
+          {data.reviewPublishedAt && data.reviewEditedAt && ' · '}
+          {data.reviewEditedAt && <>Updated {data.reviewEditedAt}</>}
+        </p>
+      )}
+    </header>
+    <section class="review"><Content /></section>
+    <a class="back-link" href="/posts/books/">Back to all books</a>
+  </article>
+</Layout>
+
+<style>
+  article {
+    max-width: 65ch;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .author {
+    margin-top: 0.2rem;
+  }
+
+  .metadata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .metadata div {
+    display: flex;
+    gap: 0.35rem;
+  }
+
+  .metadata dt {
+    font-weight: 700;
+  }
+
+  .metadata dd {
+    margin: 0;
+  }
+
+  .review-history {
+    color: hsl(31, 15%, 38%);
+    font-size: 0.85rem;
+  }
+
+  .review {
+    margin-top: 2rem;
+    font-family: 'Lora', serif;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin: 2rem 0;
+  }
+</style>
