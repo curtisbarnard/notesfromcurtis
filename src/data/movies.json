@@ -1,5 +1,23 @@
 [
     {
+        "id": 1024621,
+        "title": "Call Me Chihiro",
+        "release_year": 2023,
+        "watch_date": "2026-08-08",
+        "genre": "Drama",
+        "rating": 3,
+        "notes": "A tug of ware between moments of happiness and loneliness. A lot of mundane day to day life in Japan and showing the disconnect between people."
+    },
+    {
+        "id": 57120,
+        "title": "Meek's Cutoff",
+        "release_year": 2011,
+        "watch_date": "2026-08-05",
+        "genre": "Western",
+        "rating": 3,
+        "notes": "Despair. It's refreshing to watch a movie with long cuts and no romantic interest driving the story forward. No payoff, but it does it's job in making you desperate."
+    },
+    {
         "id": 1208348,
         "title": "Rental Family",
         "release_year": 2025,
@@ -1630,12 +1648,12 @@
     },
     {
         "id": 5511,
-        "title": "Le Samoura\u00ef",
-        "release_year": 1967,
-        "watch_date": null,
+        "title": "Le Samouraï",
+        "release_year": 1972,
+        "watch_date": "2026-09-29",
         "genre": "Crime",
-        "rating": null,
-        "notes": ""
+        "rating": 3,
+        "notes": "I enjoyed the visuals of color, but being almost black and white. Also the confusing maze like movement thru the police station and Jef thru the city. The ending leaves you with questions, but in a way that you can write your own."
     },
     {
         "id": 17810,
